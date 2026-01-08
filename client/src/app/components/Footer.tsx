@@ -1,8 +1,11 @@
+"use client"
 import React from 'react'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <footer>
+      <h1 className='bg-orange-700'>footer</h1>
+    </footer>
   )
 }
 

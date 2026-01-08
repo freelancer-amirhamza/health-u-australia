@@ -1,3 +1,7 @@
+"use client"
 export default function Page() {
-  return <h1>Hello, Next.js!</h1>
+  return <div className="">
+    <h1>Hello, Next.js! good morning</h1>
+  </div>
 }
+
