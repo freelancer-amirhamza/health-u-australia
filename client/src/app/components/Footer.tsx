@@ -6,6 +6,8 @@ import google_review from "assets/google-reviews-img.png"
 import Image from 'next/image';
 import { nav_items } from 'config/page';
 import Link from 'next/link';
+import { PiMapPinAreaFill } from 'react-icons/pi';
+import { FaFacebookF, FaInstagramSquare, FaLinkedinIn } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -18,10 +20,35 @@ const Footer = () => {
         </div>
         <ul className="flex flex-wrap w-full items-center justify-center gap-5 text-white">
           {nav_items.map((item, index)=>(
-            <li key={index}>
+            <li key={index} className='hover:text-primary font-medium transition-colors duration-300 text-lg '>
               <Link href={item.path} > {item.label} </Link>
             </li>
           ))}
+        </ul>
+        <ul className="flex flex-wrap w-full items-center font-medium text-lg gap-4 justify-center">
+          <li className="flex items-center text-center gap-2 text-white ">
+            <PiMapPinAreaFill size={30} />
+            <address> 109-129 Blaxland Road, Ryde NSW 2112</address>
+          </li>
+          <li className="flex items-center text-center gap-2 text-white ">
+            <PiMapPinAreaFill size={30} />
+            <address> 92 Bowden street ryde NSW 2112</address>
+          </li>
+          <li className="flex items-center text-center gap-2 text-white ">
+            <PiMapPinAreaFill size={30} />
+            <address>102 Denman Parade, Normanhurst NSW 2076</address>
+          </li>
+        </ul>
+        <ul className='flex flex-wrap gap-10 items-center justify-center  ' >
+          <li className=" border-2 p-1.5 rounded-full hover:bg-foreground hover:text-white transition-colors duration-300">
+            <Link href={"https://www.instagram.com/healthu_au/"}><FaInstagramSquare size={30} /> </Link>
+          </li>
+          <li className=" border-2 p-1.5 rounded-full hover:bg-foreground hover:text-white transition-colors duration-300">
+            <Link href={"https://www.facebook.com/healthuau/"}><FaFacebookF  size={30} /> </Link>
+          </li>
+          <li className=" border-2 p-1.5 rounded-full hover:bg-foreground hover:text-white transition-colors duration-300">
+            <Link href={"https://www.linkedin.com/company/health-u-australia/"}><FaLinkedinIn size={30} /> </Link>
+          </li>
         </ul>
       </div>
     </footer>
