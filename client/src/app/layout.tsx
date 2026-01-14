@@ -12,7 +12,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.png" sizes="any" />
       </head>
-      <body  >
+      <body className="relative flex flex-col h-full w-full"  >
         <Header/>
         {children}
         <Footer/>

@@ -1,7 +1,9 @@
 "use client"
+import Home from "./pages/home/page"
+
 export default function Page() {
-  return <div className="">
-    <h1 className="text-primary">Hello, Next.js! good morning</h1>
-  </div>
+  return <main className="h-full flex w-full">
+  <Home/>
+  </main>
 }
 

@@ -1,7 +1,7 @@
 
 
 export const nav_items = [
-    {label:"Home", path:"/home"},
+    {label:"Home", path:"/"},
     {label:"NDIS", path:"/ndis"},
     {label:"Services", path:"/services"},
     {label:"Sil house", path:"/sil house"},

@@ -8,10 +8,10 @@ import { AiOutlineMenu } from "react-icons/ai";
 
 const Header = () => {
   return (
-    <header>
-      <div className="container flex w-full items-center  justify-between px-3 sm:px-0 ">
+    <header className='w-full flex items-center justify-center sticky bg-white top-0 z-50 '>
+      <div className="container flex w-full items-center  justify-between px-3 sm:px-0  ">
         <Link href="/" className="max-h-full ">
-            <Image src={logo} alt='Health U logo' className='h-28 w-44'  />
+            <Image src={logo} alt='Health U logo' className='h-24 w-44'  />
         </Link>
         <nav className='w-full flex justify-end'>
           <ul className=" w-full items-center justify-end hidden  lg:flex ">

@@ -11,8 +11,8 @@ import { FaFacebookF, FaInstagramSquare, FaLinkedinIn } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className='w-full h-max flex items-center justify-center bg-black fixed bottom-0 '>
-      <div className="container w-full flex flex-col items-center justify-center my-10 py-20 gap-y-10  ">
+    <footer className='w-full h-max flex flex-col items-center justify-center bg-black '>
+      <div className="container w-full flex flex-col items-center justify-center  pt-16 gap-y-10  ">
         <div className=" flex w-full items-center justify-center gap-10 flex-wrap  h-full">
           <Image src={logo} alt='Health U Australia' className='  max-w-52 max-h-40 h-full p-0 m-0 w-full  flex  '/>
           <Image src={ndis_logo} alt='Health U Australia ' className='  max-w-52 max-h-40 h-full p-0 m-0 w-full  flex  '/>
@@ -50,6 +50,12 @@ const Footer = () => {
             <Link href={"https://www.linkedin.com/company/health-u-australia/"}><FaLinkedinIn size={30} /> </Link>
           </li>
         </ul>
+      </div>
+      {/* copyright section */}
+      <div className="flex w-full flex-col items-center py-10 px-0 mx-0 gap-8 justify-center">
+        <div className='w-full h-0.5 bg-white'/>
+        <p className="text-white text-lg font-medium">Copyright &copy; {new Date().getFullYear()} HEALTH U AUSTRALIA Design by
+          <Link className='font-bold px-2 hover:text-primary' href={"https://amirhamza.onrender.com"}>Amir Hamza</Link> </p>
       </div>
     </footer>
   )
