@@ -23,8 +23,8 @@ const About = () => {
                         we have you covered.
                     </p>
                     <Link href={"/"} className='text-white bg-primary text-xl uppercase font-semibold rounded-full py-5 px-8
-                      hover:bg-secondary transition-colors duration-300 items-start w-max '
-                     >Learn more </Link>
+                        hover:bg-secondary transition-colors duration-300 items-start w-max '
+                    >Learn more </Link>
                 </div>
             </div>
         </section>

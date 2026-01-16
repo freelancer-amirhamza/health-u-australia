@@ -1,5 +1,6 @@
 import About from "app/components/About"
 import Hero from "app/components/Hero"
+import Service from "app/components/Service"
 import banner1 from "assets/images/banner-img.jpg"
 import Image from "next/image"
 import Link from "next/link"
@@ -11,6 +12,7 @@ const Home = () => {
     {/* banner  */}
       <Hero/>
       <About/>
+      <Service/>
   </main>
   )
 }
