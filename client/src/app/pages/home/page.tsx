@@ -1,4 +1,5 @@
 import About from "app/components/About"
+import Choose from "app/components/Choose"
 import Hero from "app/components/Hero"
 import Service from "app/components/Service"
 import banner1 from "assets/images/banner-img.jpg"
@@ -13,6 +14,7 @@ const Home = () => {
       <Hero/>
       <About/>
       <Service/>
+      <Choose/>
   </main>
   )
 }
