@@ -1,4 +1,4 @@
-import { service1, service2, service3, service4, service5, service6, service7, service8 } from "assets"
+import { aryan, brain, evelyn, jose, service1, service2, service3, service4, service5, service6, service7, service8 } from "assets"
 
 
 export const nav_items = [
@@ -56,3 +56,35 @@ export const service_items = [
     },
 
 ]
+
+
+export const google_reviews = [
+    {
+        image:aryan,
+        name:"Aryan Arya",
+        date:"1 years",
+        rates:5,
+        paragraph:"Really nice environment. Everyone was so helpful and friendly, also the whole process for the interview was really comfortable. Had a really great experience with them.",
+    },
+    {
+        image:jose,
+        name:"Jose Elias",
+        date:"1 years",
+        rates:5,
+        paragraph:"The team at Health U has been incredible. The administrative staff, in particular, have been so helpful, always quick to respond to my calls, texts, and emails whenever I’ve reached out. They’ve made the whole process easy and stress-free. I’m really impressed with their support and would highly recommend them to anyone in need. ",
+    },
+    {
+        image:brain,
+        name:"Brian Lopez-Luna",
+        date:"1 years",
+        rates:5,
+        paragraph:"I met one of the team members at Health U Australia, and she was fantastic—really friendly and helpful. She answered all my questions and made sure I got the assistance I needed. I’m really happy with the service and would definitely recommend Health U Australia to others."
+    },
+    {
+        image:evelyn,
+        name:"Evelyn Kate",
+        date:"1 years",
+        rates:5,
+        paragraph:"My experience with Health U Australia, a company that provides NDIS disability support services, has been truly impressive. The staff are knowledgeable and genuinely caring, ensuring that all services are tailored to meet individual needs effectively. They offer a broad range of support, from daily living assistance to more specialized care, all handled with great competence and compassion. It’s clear that they prioritize the well-being and empowerment of their clients, making them a reliable choice for anyone looking for quality disability support services."
+    },
+];

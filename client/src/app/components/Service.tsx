@@ -5,11 +5,12 @@ import Image from 'next/image'
 import React, { useRef, useEffect, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { Navigation } from 'swiper/modules';
+import { Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 import Link from 'next/link';
+import service_bg from "assets/images/services-pattan-img01.png"
 
 const Service = () => {
 
@@ -22,18 +23,23 @@ const Service = () => {
   }, []);
 
   return (
-    <section className='w-full h-full    bg-yellow-light flex  '>
-      <div className="container mx-auto w-full h-full  items-center justify-center py-12 flex flex-col  ">
+    <section className='w-full h-full relative' style={{ backgroundImage: `url(${service_bg.src})`, backgroundSize: 'cover', backgroundPosition: 'center',  }}>
+      <div className="absolute inset-0 bg-yellow-500/30"></div>
+      <div className="container mx-auto w-full h-full items-center justify-center py-12 flex flex-col relative z-10">
         <h1 className=" text-3xl w-full text-center p-5 text-primary font-bold ">Our Services</h1>
         <h1 className="text-4xl w-full p-5 text-center text-black font-bold uppercase ">Comprehensive Disability Care Services</h1>
         <Swiper
           loop={true}
-          modules={[Navigation]}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
+          modules={[Navigation, Autoplay]}
           navigation={mounted ? {
             prevEl: prevRef.current,
             nextEl: nextRef.current,
           } : false}
-          className='flex w-full h-full min-h-110 relative justify-self-center mx-auto  items-center '
+          className='flex w-full h-full min-h-110 relative justify-center mx-auto  items-center '
 
           style={{
             '--swiper-navigation-color': '#f59e0b',
@@ -55,7 +61,7 @@ const Service = () => {
           }}>
           {service_items.map((item, index) => (
             <SwiperSlide>
-              <div className="flex flex-col  min-h-98 w-full max-w-70  items-center justify-center  rounded-2xl relative
+              <div className="flex flex-col  min-h-98 w-full max-w-70  items-center justify-self-center  rounded-2xl relative
              bg-white ">
                 <Image src={item.image} alt={item.title}
                   className=' flex w-full h-full max-h-64 object-scale-cover absolute top-0 rounded-t-3xl rounded-b-full ' />
