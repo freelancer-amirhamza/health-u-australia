@@ -19,13 +19,13 @@ const Testimonials = () => {
     const prevRef = useRef<any>(null);
     const nextRef = useRef<any>(null);
     const [mounted, setMounted] = useState(false);
-    const [rating, setRating] = useState([5]);
+    const [rating, setRating] = useState(5);
 
     useEffect(() => {
         setMounted(true);
     }, []);
 
-    const handleRatingChange = (getRating:any)=>{
+    const handleRatingChange = (getRating:number)=>{
         setRating(getRating)
     }
 
@@ -40,7 +40,7 @@ const Testimonials = () => {
                         <div className="grid gap-3">
                             <h1 className="text-base font-semibold ">Health U Australia</h1>
                             <div className="">
-                                <StarRating rating={rating}handleRatingChange={[]} />
+                                <StarRating rating={rating}handleRatingChange={handleRatingChange} />
                                 <p className="text-secondary-text font-medium">{google_reviews.length} Google reviews</p>
                             </div>
                             <Link href={"/"} className='border py-2 rounded-sm px-4 hover:bg-secondary-text transition-colors duration-300 font-bold hover:text-white'

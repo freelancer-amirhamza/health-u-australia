@@ -20,7 +20,7 @@ const Hero = () => {
                             <Link href={""}>Contact Us </Link>
                         </button>
                         <button className="bg-secondary text-white text-lg uppercase font-semibold px-8 py-5 rounded-full hover:bg-primary transition-colors duration-300  ">
-                            <Link href={""}>Contact Us </Link>
+                            <Link href={""}>0481 707 758</Link>
                         </button>
                     </div>
                 </div>
