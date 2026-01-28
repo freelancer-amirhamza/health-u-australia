@@ -12,7 +12,7 @@ const PageBanner: React.FC <PageBannerProps> = ({path, title}) => {
     style={{backgroundImage: `url(${banner.src})`, backgroundRepeat:"no-repeat", backgroundSize:"cover", backgroundPosition:"top center"  }}
     >
         <div className="container flex flex-col gap-1 items-center justify-center max-sm:px-5 ">
-            <h1 className="text-6xl font-extrabold text-secondary uppercase">About Page</h1>
+            <h1 className="text-6xl font-extrabold text-secondary uppercase">{title} </h1>
             <ul className="flex justify-center items-center text-white text-3xl ">
                 <li className="hover:text-secondary transition-colors duration-300">
                     <Link href={"/"}>Home</Link>

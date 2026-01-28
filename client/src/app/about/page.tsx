@@ -57,7 +57,7 @@ const About = () => {
           </div>
 
           <div className=" border border-secondary-text/40 hover:scale-102 ease-in-out transition-all duration-500 flex-1 flex flex-col items-start p-8 w-full rounded-md shadow-2xl gap-10 ">
-            <Image src={about_icon} alt='about health u australia' />
+            <Image src={about_icon1} alt='about health u australia' />
             <div className="flex flex-col w-full justify-center gap-2    ">
               <h1 className="text-[27px] font-bold  ">Our Support Workers Are  <span className="text-secondary">Unique In Approach</span></h1>
               <div className='w-14 h-0.75 bg-primary items-center  ' />

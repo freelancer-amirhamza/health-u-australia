@@ -1,3 +1,4 @@
+import { sil_house } from './../config/page';
 import service1 from "assets/images/services/services-img01.jpg"
 import service2 from "assets/images/services/services-img02.jpg"
 import service3 from "assets/images/services/services-img03.jpg"
@@ -13,7 +14,11 @@ import jose from "assets/images/reviews/jose.png"
 import call_icon from "assets/images/info-call-img.png"
 import email_icon from "assets/images/info-email-img.png"
 import clack_icon from "assets/images/info-clock-img.png"
+import sil_image1 from "assets/images/sil-images/sil-img01.jpg"
+import sil_image2 from "assets/images/sil-images/sil-img02.jpg"
+import sil_image3 from "assets/images/sil-images/sil-img03.jpg"
+import sil_image4 from "assets/images/sil-images/sil-img04.jpg"
 export {
     service1, service2, service3, service4,service5,service6,service7,service8,aryan, brain, evelyn,jose,
-    email_icon,clack_icon,call_icon,
+    email_icon,clack_icon,call_icon,sil_image1,sil_image2,sil_image3,sil_image4,
 }
