@@ -14,15 +14,17 @@ const Footer = () => {
     <footer className='w-full h-max flex flex-col items-center justify-center bg-black '>
       <div className="container w-full flex flex-col items-center justify-center  pt-16 gap-y-10  ">
         <div className=" flex w-full items-center justify-center gap-10 flex-wrap  h-full">
-          <Image src={logo} alt='Health U Australia' className='  max-w-52 max-h-40 h-full p-0 m-0 w-full  flex  '/>
-          <Image src={ndis_logo} alt='Health U Australia ' className='  max-w-52 max-h-40 h-full p-0 m-0 w-full  flex  '/>
-          <Image src={google_review} alt='Health U Australia' className='  max-w-52 max-h-40 h-full p-0 m-0 w-full  flex  '/>
+          <Image src={logo} alt='Health U Australia' className='  max-w-52 max-h-40 h-full p-0 m-0 w-full  flex  ' />
+          <Image src={ndis_logo} alt='Health U Australia ' className='  max-w-52 max-h-40 h-full p-0 m-0 w-full  flex  ' />
+          <Image src={google_review} alt='Health U Australia' className='  max-w-52 max-h-40 h-full p-0 m-0 w-full  flex  ' />
         </div>
         <ul className="flex flex-wrap w-full items-center justify-center gap-5 text-white">
-          {nav_items.map((item, index)=>(
-            <li key={index} className='hover:text-primary font-medium transition-colors duration-300 text-lg '>
-              <Link href={item.path} > {item.label} </Link>
-            </li>
+          {nav_items.map((item, index) => (
+            item.path && (
+              <li key={index} className='hover:text-primary font-medium transition-colors duration-300 text-lg '>
+                <Link href={item.path} > {item.label} </Link>
+              </li>
+            )
           ))}
         </ul>
         <ul className="flex flex-wrap w-full items-center font-medium text-lg gap-4 justify-center">
@@ -44,7 +46,7 @@ const Footer = () => {
             <Link href={"https://www.instagram.com/healthu_au/"}><FaInstagramSquare size={30} /> </Link>
           </li>
           <li className=" border-2 p-1.5 rounded-full hover:bg-foreground hover:text-white transition-colors duration-300">
-            <Link href={"https://www.facebook.com/healthuau/"}><FaFacebookF  size={30} /> </Link>
+            <Link href={"https://www.facebook.com/healthuau/"}><FaFacebookF size={30} /> </Link>
           </li>
           <li className=" border-2 p-1.5 rounded-full hover:bg-foreground hover:text-white transition-colors duration-300">
             <Link href={"https://www.linkedin.com/company/health-u-australia/"}><FaLinkedinIn size={30} /> </Link>
@@ -53,7 +55,7 @@ const Footer = () => {
       </div>
       {/* copyright section */}
       <div className="flex w-full flex-col items-center py-10 px-0 mx-0 gap-8 justify-center">
-        <div className='w-full h-0.5 bg-white'/>
+        <div className='w-full h-0.5 bg-white' />
         <p className="text-white text-lg font-medium">Copyright &copy; {new Date().getFullYear()} HEALTH U AUSTRALIA Design by
           <Link className='font-bold px-2 hover:text-primary' href={"https://amirhamza.onrender.com"}>Amir Hamza</Link> </p>
       </div>

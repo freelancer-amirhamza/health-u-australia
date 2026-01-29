@@ -36,16 +36,18 @@ const SilHouse = () => {
                 ))}
 
                 <div className="flex flex-col w-full justify-center gap-4 h-full items-center bg-gray-100 p-10    ">
-                    <h1 className="text-3xl font-bold  ">Contact us to Get an NDIS Service as Per Your Needs</h1>
+                    <h1 className="text-3xl font-bold  ">Get Started with Our Exceptional SIL Assistance!</h1>
                     <div className='w-14 h-0.75 bg-primary items-center  ' />
                     <p className=" flex  text-lg text-secondary-text font-medium text-center ">
-                        Call us or send us an email requesting an appointment, and we will get back to you as soon as possible.
+                        Get in touch with us now to opt for our exceptional SIL assistance and get started attaining independence and cheerfulness in life.
                     </p>
                     <div className="flex items-center justify-center gap-10">
                         <Link href={"/contact-us"} className='text-white text-lg font-semibold px-9 py-3.5 rounded-full bg-primary hover:bg-secondary transition-colors duration-300 ' >Enquire Now</Link>
                         <Link href={"/referral"} className='text-white text-lg font-semibold px-9 py-3.5 rounded-full bg-primary hover:bg-secondary transition-colors duration-300 ' >Referral</Link>
                     </div>
                 </div>
+
+                
             </div>
         </div>
     )

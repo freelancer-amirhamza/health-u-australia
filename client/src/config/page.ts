@@ -2,12 +2,33 @@ import { aryan, brain, evelyn, jose, service1, service2, service3, service4, ser
 
 
 export const nav_items = [
-    {label:"Home", path:"/about"},
+    {
+        label:"Home",
+        options:[{label:"About Health U", path:"/about"}]
+    },
     {label:"NDIS", path:"/ndis"},
-    {label:"Services", path:"/services"},
+    {
+        label:"Services",
+        options:[
+            {label:"Community Participation", path:"/community-participation"},
+            {label:"Capacity Building", path:"/capacity-building"},
+            {label:"Support Coordination", path:"/support-coordination"},
+            {label:"Assist In Self-care", path:"/assist-in-self-care"},
+            {label:"Assist In Transport", path:"/assist-in-transport"},
+            {label:"Home Modification", path:"/home-modification"},
+            {label:"Non NDIS Free Service", path:"/non-ndis"},
+            {label:"Gardening/House And Yard", path:"/gardening-house-yard"},
+        ]
+    },
     {label:"Sil house", path:"/sil-house"},
     {label:"Compassion in Action", path:"/compassion_in_action"},
-    {label:"Events And News", path:"/event_and_news"},
+    {
+        label:"Events And News",
+        options:[
+            {label:"Current Events",path:"current-events"},
+            {label:"Past Events",path:"past-events"},
+        ]
+    },
     {label:"Gallery", path:"/gallery"},
     {label:"Contact Us", path:"/contact"},
     {label:"Referral", path:"/referral"},
