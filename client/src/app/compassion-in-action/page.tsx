@@ -20,9 +20,11 @@ const page = () => {
                             className='object-cover w-full h-full inset-0 hover:scale-103 duration-500 transition-all ease-in-out rounded-md' />
                     </div>
                     {/* images section end */}
-                        <div className="flex flex-col w-full justify-center gap-10  mt-8   ">
-                            <h1 className="text-[27px] font-bold  ">Compassion in Action<span className="text-secondary"> For Non NDIS Participants</span></h1>
+                        <div className="flex flex-col w-full justify-center gap-10     ">
+                            <div className="grid gap-4">
+                                <h1 className="text-[27px] font-bold  ">Compassion in Action<span className="text-secondary"> For Non NDIS Participants</span></h1>
                             <div className='w-14 h-0.75 bg-primary items-center  ' />
+                            </div>
                             <p className="  w-full text-lg text-secondary-text font-medium  ">At Health U, we believe that no one should feel left behind when they face short-term challenges in daily life.
                                  That’s why we created the <strong>Compassion in Action (CIA) Program</strong> – a community-driven initiative designed to bridge the gap for individuals who need immediate,
                                 practical support but may not be eligible for, or currently connected with, government-funded services such as NDIS, My Aged Care, Carer Gateway, or ComPacks.</p>

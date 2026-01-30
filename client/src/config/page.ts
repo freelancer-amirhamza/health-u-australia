@@ -1,4 +1,4 @@
-import { aryan, brain, evelyn, jose, service1, service2, service3, service4, service5, service6, service7, service8, sil_image1, sil_image2, sil_image3, sil_image4 } from "assets"
+import { aryan, brain, community_participation1, community_participation2, community_participation3, community_participation4, evelyn, jose, service1, service2, service3, service4, service5, service6, service7, service8, sil_image1, sil_image2, sil_image3, sil_image4 } from "assets"
 
 
 export const nav_items = [
@@ -157,6 +157,52 @@ export const sil_house = [
 ]
 
 export const community_participation = [
+    {
+        image:community_participation1,
+        title1:"Live an Independent & Fulfilling Life with Our",
+        title2:"Supported Independent Living Program",
+        paragraph1:"Various challenges can stop you from actively participating in your community. But we at Health U Support Services are dedicated to not letting this happen. We are here to help you overcome every challenge that comes your way and ensure successful community participation. Our community participation support program is designed to assist you in connecting with others fearlessly",
+        paragraph2:"We believe that community participation is not just mingling and socialising; it can also stand for sharing spaces with people, be it in a movie theatre, park, or cafe. So, our expert support team will keep this at the forefront, work closely with you to understand your specific needs and preferences for community engagement, and craft a comprehensive and personalised plan to support your goals.",
+        paragraph3:"Our service is more like a commitment to keeping you on top of socialisation and community participation.",
+    },
+    {
+        image:community_participation2,
+        title1:"How an Our Community Participation",
+        title2:"Service Support You?",
+        paragraph1:"We promise an exceptional transformation of your life with our community participation service. It is an extensive program that we offer with constant advancements to give you the life you truly deserve. Here is how the service can support you:",
+        bullet_points:[
+            "Assistance with attending personal development courses.",
+            "Assistance with joining a social group or club",
+            "Support with going on a camp or taking a holiday",
+            "Support for seeing a movie or concert",
+            "Assistance with visiting your local library",
+            "Assistance with joining a sporting club",
+            "Support with everything else that’s related to your community participation",
+        ],
+    },
+    {
+        image:community_participation3,
+        title1:"Develop Skills That Keep",
+        title2:"You Moving Confidently",
+        paragraph1:"Your dream of moving confidently in your community and staying prepared for any task can come true with our comprehensive skill development program. Our experienced team of support workers prepares a plan, keeping your goals and aspirations in mind, and implements it with precision and care to help you develop the skills you need to actively engage in your community and show everyone what you are capable of.",
+        paragraph2:"We help you find an ideal way out of your suffocating and frustrating life and live the way you have always dreamed of.",
+    },
+    {
+        image:community_participation4,
+        title1:"Why Choose Health U Support Services",
+        title2:"for Community Participation?",
+        paragraph1:"Here is why we at Health U Support Services are an excellent choice for your community participation support requirements:",
+        bullet_points:[
+            "We offer personalised assistance with community participation to participants.",
+            "We are a trusted, reliable, and reputed name in the disability sector.",
+            "We ensure 100% quality in our community participation support program.",
+            "We have an experienced team of support workers to assist you.",
+            "We respect your choices and decisions about living independently in your community.",
+        ]
+    },
+]
+
+export const compassion_in_action = [
     {
         image:sil_image1,
         title1:"Live an Independent & Fulfilling Life with Our",

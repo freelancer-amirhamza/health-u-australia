@@ -18,7 +18,12 @@ import sil_image1 from "assets/images/sil-images/sil-img01.jpg"
 import sil_image2 from "assets/images/sil-images/sil-img02.jpg"
 import sil_image3 from "assets/images/sil-images/sil-img03.jpg"
 import sil_image4 from "assets/images/sil-images/sil-img04.jpg"
+import community_participation1 from "assets/images/community/community-participation-img01.jpg"
+import community_participation2 from "assets/images/community/community-participation-img02.jpg"
+import community_participation3 from "assets/images/community/community-participation-img03.jpg"
+import community_participation4 from "assets/images/community/community-participation-img04.jpg";
 export {
     service1, service2, service3, service4,service5,service6,service7,service8,aryan, brain, evelyn,jose,
-    email_icon,clack_icon,call_icon,sil_image1,sil_image2,sil_image3,sil_image4,
+    email_icon,clack_icon,call_icon,sil_image1,sil_image2,sil_image3,sil_image4,community_participation1,
+    community_participation2,community_participation3,community_participation4,
 }
