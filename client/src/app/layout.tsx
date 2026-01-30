@@ -8,11 +8,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" >
+    <html lang="en">
       <head>
         <link rel="icon" href="/favicon.png" sizes="any" />
+
       </head>
-      <body className="relative flex flex-col h-full w-full" >
+      <body className="relative flex flex-col h-full w-full"  suppressHydrationWarning  >
         <Header />
         {children}
         <Footer />
