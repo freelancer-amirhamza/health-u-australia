@@ -1,79 +1,79 @@
-import { aryan, brain, capacity1, capacity2, capacity3, community_participation1, community_participation2, community_participation3, community_participation4, evelyn, jose, service1, service2, service3, service4, service5, service6, service7, service8, sil_image1, sil_image2, sil_image3, sil_image4, support1, support2, support3 } from "assets"
+import { aryan, assist_self1, assist_self2, assist_self3, assist_transport1, assist_transport2, assist_transport3, assist_transport4, assist_transport5, brain, capacity1, capacity2, capacity3, community_participation1, community_participation2, community_participation3, community_participation4, evelyn, jose, service1, service2, service3, service4, service5, service6, service7, service8, sil_image1, sil_image2, sil_image3, sil_image4, support1, support2, support3 } from "assets"
 
 
 export const nav_items = [
     {
-        label:"Home",
-        options:[{label:"About Health U", path:"/about"}]
+        label: "Home",
+        options: [{ label: "About Health U", path: "/about" }]
     },
-    {label:"NDIS", path:"/ndis"},
+    { label: "NDIS", path: "/ndis" },
     {
-        label:"Services",
-        options:[
-            {label:"Community Participation", path:"/community-participation"},
-            {label:"Capacity Building", path:"/capacity-building"},
-            {label:"Support Coordination", path:"/support-coordination"},
-            {label:"Assist In Self-care", path:"/assist-in-self-care"},
-            {label:"Assist In Transport", path:"/assist-in-transport"},
-            {label:"Home Modification", path:"/home-modification"},
-            {label:"Non NDIS Free Service", path:"/non-ndis"},
-            {label:"Gardening/House And Yard", path:"/gardening-house-yard"},
+        label: "Services",
+        options: [
+            { label: "Community Participation", path: "/community-participation" },
+            { label: "Capacity Building", path: "/capacity-building" },
+            { label: "Support Coordination", path: "/support-coordination" },
+            { label: "Assist In Self-care", path: "/assist-in-self-care" },
+            { label: "Assist In Transport", path: "/assist-in-transport" },
+            { label: "Home Modification", path: "/home-modification" },
+            { label: "Non NDIS Free Service", path: "/non-ndis" },
+            { label: "Gardening/House And Yard", path: "/gardening-house-yard" },
         ]
     },
-    {label:"Sil house", path:"/sil-house"},
-    {label:"Compassion in Action", path:"/compassion-in-action"},
+    { label: "Sil house", path: "/sil-house" },
+    { label: "Compassion in Action", path: "/compassion-in-action" },
     {
-        label:"Events And News",
-        options:[
-            {label:"Current Events",path:"current-events"},
-            {label:"Past Events",path:"past-events"},
+        label: "Events And News",
+        options: [
+            { label: "Current Events", path: "current-events" },
+            { label: "Past Events", path: "past-events" },
         ]
     },
-    {label:"Gallery", path:"/gallery"},
-    {label:"Contact Us", path:"/contact"},
-    {label:"Referral", path:"/referral"},
+    { label: "Gallery", path: "/gallery" },
+    { label: "Contact Us", path: "/contact" },
+    { label: "Referral", path: "/referral" },
 ]
 
 export const service_items = [
     {
-        title:"Community Participation",
-        image:service1,
-        path:"/community-participation"
+        title: "Community Participation",
+        image: service1,
+        path: "/community-participation"
     },
     {
-        title:"Assist In Self-Care",
-        image:service2,
-        path:"/assist-in-self-care"
+        title: "Assist In Self-Care",
+        image: service2,
+        path: "/assist-in-self-care"
     },
     {
-        title:"Assist In Transport",
-        image:service3,
-        path:"/assist-in-transport"
+        title: "Assist In Transport",
+        image: service3,
+        path: "/assist-in-transport"
     },
     {
-        title:"Support Coordination",
-        image:service4,
-        path:"/support-coordination"
+        title: "Support Coordination",
+        image: service4,
+        path: "/support-coordination"
     },
     {
-        title:"Gardening / House And Yard Maintenance",
-        image:service5,
-        path:"/gardening-yard-maintenance"
+        title: "Gardening / House And Yard Maintenance",
+        image: service5,
+        path: "/gardening-yard-maintenance"
     },
     {
-        title:"Capacity Building",
-        image:service6,
-        path:"/capacity-building"
+        title: "Capacity Building",
+        image: service6,
+        path: "/capacity-building"
     },
     {
-        title:"Home Modification",
-        image:service7,
-        path:"/home-modification"
+        title: "Home Modification",
+        image: service7,
+        path: "/home-modification"
     },
     {
-        title:"Non NIDS Free Services",
-        image:service8,
-        path:"/non-ndis"
+        title: "Non NIDS Free Services",
+        image: service8,
+        path: "/non-ndis"
     },
 
 ]
@@ -81,71 +81,71 @@ export const service_items = [
 
 export const google_reviews = [
     {
-        image:aryan,
-        name:"Aryan Arya",
-        date:"1 years",
-        rates:5,
-        paragraph:"Really nice environment. Everyone was so helpful and friendly, also the whole process for the interview was really comfortable. Had a really great experience with them.",
+        image: aryan,
+        name: "Aryan Arya",
+        date: "1 years",
+        rates: 5,
+        paragraph: "Really nice environment. Everyone was so helpful and friendly, also the whole process for the interview was really comfortable. Had a really great experience with them.",
     },
     {
-        image:jose,
-        name:"Jose Elias",
-        date:"1 years",
-        rates:5,
-        paragraph:"The team at Health U has been incredible. The administrative staff, in particular, have been so helpful, always quick to respond to my calls, texts, and emails whenever I’ve reached out. They’ve made the whole process easy and stress-free. I’m really impressed with their support and would highly recommend them to anyone in need. ",
+        image: jose,
+        name: "Jose Elias",
+        date: "1 years",
+        rates: 5,
+        paragraph: "The team at Health U has been incredible. The administrative staff, in particular, have been so helpful, always quick to respond to my calls, texts, and emails whenever I’ve reached out. They’ve made the whole process easy and stress-free. I’m really impressed with their support and would highly recommend them to anyone in need. ",
     },
     {
-        image:brain,
-        name:"Brian Lopez-Luna",
-        date:"1 years",
-        rates:5,
-        paragraph:"I met one of the team members at Health U Australia, and she was fantastic—really friendly and helpful. She answered all my questions and made sure I got the assistance I needed. I’m really happy with the service and would definitely recommend Health U Australia to others."
+        image: brain,
+        name: "Brian Lopez-Luna",
+        date: "1 years",
+        rates: 5,
+        paragraph: "I met one of the team members at Health U Australia, and she was fantastic—really friendly and helpful. She answered all my questions and made sure I got the assistance I needed. I’m really happy with the service and would definitely recommend Health U Australia to others."
     },
     {
-        image:evelyn,
-        name:"Evelyn Kate",
-        date:"1 years",
-        rates:5,
-        paragraph:"My experience with Health U Australia, a company that provides NDIS disability support services, has been truly impressive. The staff are knowledgeable and genuinely caring, ensuring that all services are tailored to meet individual needs effectively. They offer a broad range of support, from daily living assistance to more specialized care, all handled with great competence and compassion. It’s clear that they prioritize the well-being and empowerment of their clients, making them a reliable choice for anyone looking for quality disability support services."
+        image: evelyn,
+        name: "Evelyn Kate",
+        date: "1 years",
+        rates: 5,
+        paragraph: "My experience with Health U Australia, a company that provides NDIS disability support services, has been truly impressive. The staff are knowledgeable and genuinely caring, ensuring that all services are tailored to meet individual needs effectively. They offer a broad range of support, from daily living assistance to more specialized care, all handled with great competence and compassion. It’s clear that they prioritize the well-being and empowerment of their clients, making them a reliable choice for anyone looking for quality disability support services."
     },
 ];
 
 
 export const sil_house = [
     {
-        image:sil_image1,
-        title1:"Live an Independent & Fulfilling Life with Our",
-        title2:"Supported Independent Living Program",
-        paragraph1:"We at Health U Support Services are on a mission to empower participants with our exceptional care and support. Whether you want support to live comfortably in your own home or want to move to another place for a change in scenario, our specialised supported independent living program will foster an environment where you can thrive.",
-        paragraph2:"From supporting you with your everyday activities to building your skills, our service will cover everything to help you live an independent and fulfilling life. Whether you want our support staff to attend to you 24/7 or just a few hours in a day, we will plan our assistance depending on your needs and circumstances.",
+        image: sil_image1,
+        title1: "Live an Independent & Fulfilling Life with Our",
+        title2: "Supported Independent Living Program",
+        paragraph1: "We at Health U Support Services are on a mission to empower participants with our exceptional care and support. Whether you want support to live comfortably in your own home or want to move to another place for a change in scenario, our specialised supported independent living program will foster an environment where you can thrive.",
+        paragraph2: "From supporting you with your everyday activities to building your skills, our service will cover everything to help you live an independent and fulfilling life. Whether you want our support staff to attend to you 24/7 or just a few hours in a day, we will plan our assistance depending on your needs and circumstances.",
     },
     {
-        image:sil_image2,
-        title1:"What is",
-        title2:"SIL?",
-        paragraph1:"SIL, or supported independent living, is a support program designed by the NDIS and is referred to as a core component of the scheme tailored to meet the unique needs of participants and enable their futures. It ensures that you live life independently, develop social skills, and actively participate in your community. It also provides assistance with daily tasks in your own home or in a shared living space.",
-        paragraph2:"If you want more detailed knowledge about SIL, feel free to reach out to our team at any time.",
+        image: sil_image2,
+        title1: "What is",
+        title2: "SIL?",
+        paragraph1: "SIL, or supported independent living, is a support program designed by the NDIS and is referred to as a core component of the scheme tailored to meet the unique needs of participants and enable their futures. It ensures that you live life independently, develop social skills, and actively participate in your community. It also provides assistance with daily tasks in your own home or in a shared living space.",
+        paragraph2: "If you want more detailed knowledge about SIL, feel free to reach out to our team at any time.",
     },
     {
-        image:sil_image3,
-        title1:"Live an Independent & Fulfilling Life with Our",
-        title2:"Supported Independent Living Program",
-        paragraph1:"It should come to your attention that to opt for SIL assistance, you need to be eligible for the program. To confirm your",
-        paragraph2:"If you are this type of individual, we are ready to take our professional SIL assistance to your doorstep and arrange a shared living facility for you to provide you with the support you need to ensure a future of continued independence.",
-        bullet_title:"eligibility, you must meet the following criteria:",
-        bullet_points:[
+        image: sil_image3,
+        title1: "Live an Independent & Fulfilling Life with Our",
+        title2: "Supported Independent Living Program",
+        paragraph1: "It should come to your attention that to opt for SIL assistance, you need to be eligible for the program. To confirm your",
+        paragraph2: "If you are this type of individual, we are ready to take our professional SIL assistance to your doorstep and arrange a shared living facility for you to provide you with the support you need to ensure a future of continued independence.",
+        bullet_title: "eligibility, you must meet the following criteria:",
+        bullet_points: [
             "The individual should have a significant or permanent disability that impacts their ability to live independently without professional support.",
             "The individual needs ongoing support with daily living activities, personal care, or social tasks",
             "The individual should have goals related to achieving greater independence, improving community participation, or enhancing quality of life."
         ]
     },
     {
-        image:sil_image4,
-        title1:"Why Choose Health U Support",
-        title2:"Services for SIL Assistance?",
-        paragraph1:"We at Health U Support Services support you the way you are and in the way you want. Here are a few reasons why we are an",
-        bullet_title:"excellent choice for your SIL assistance requirements:",
-        bullet_points:[
+        image: sil_image4,
+        title1: "Why Choose Health U Support",
+        title2: "Services for SIL Assistance?",
+        paragraph1: "We at Health U Support Services support you the way you are and in the way you want. Here are a few reasons why we are an",
+        bullet_title: "excellent choice for your SIL assistance requirements:",
+        bullet_points: [
             "We are a trusted and reliable provider of SIL assistance.",
             "We take a person-centred approach to NDIS supported independent living.",
             "We have experienced support workers on our team to assist you.",
@@ -158,19 +158,19 @@ export const sil_house = [
 
 export const community_participation = [
     {
-        image:community_participation1,
-        title1:"Live an Independent & Fulfilling Life with Our",
-        title2:"Supported Independent Living Program",
-        paragraph1:"Various challenges can stop you from actively participating in your community. But we at Health U Support Services are dedicated to not letting this happen. We are here to help you overcome every challenge that comes your way and ensure successful community participation. Our community participation support program is designed to assist you in connecting with others fearlessly",
-        paragraph2:"We believe that community participation is not just mingling and socialising; it can also stand for sharing spaces with people, be it in a movie theatre, park, or cafe. So, our expert support team will keep this at the forefront, work closely with you to understand your specific needs and preferences for community engagement, and craft a comprehensive and personalised plan to support your goals.",
-        paragraph3:"Our service is more like a commitment to keeping you on top of socialisation and community participation.",
+        image: community_participation1,
+        title1: "Live an Independent & Fulfilling Life with Our",
+        title2: "Supported Independent Living Program",
+        paragraph1: "Various challenges can stop you from actively participating in your community. But we at Health U Support Services are dedicated to not letting this happen. We are here to help you overcome every challenge that comes your way and ensure successful community participation. Our community participation support program is designed to assist you in connecting with others fearlessly",
+        paragraph2: "We believe that community participation is not just mingling and socialising; it can also stand for sharing spaces with people, be it in a movie theatre, park, or cafe. So, our expert support team will keep this at the forefront, work closely with you to understand your specific needs and preferences for community engagement, and craft a comprehensive and personalised plan to support your goals.",
+        paragraph3: "Our service is more like a commitment to keeping you on top of socialisation and community participation.",
     },
     {
-        image:community_participation2,
-        title1:"How an Our Community Participation",
-        title2:"Service Support You?",
-        paragraph1:"We promise an exceptional transformation of your life with our community participation service. It is an extensive program that we offer with constant advancements to give you the life you truly deserve. Here is how the service can support you:",
-        bullet_points:[
+        image: community_participation2,
+        title1: "How an Our Community Participation",
+        title2: "Service Support You?",
+        paragraph1: "We promise an exceptional transformation of your life with our community participation service. It is an extensive program that we offer with constant advancements to give you the life you truly deserve. Here is how the service can support you:",
+        bullet_points: [
             "Assistance with attending personal development courses.",
             "Assistance with joining a social group or club",
             "Support with going on a camp or taking a holiday",
@@ -181,18 +181,18 @@ export const community_participation = [
         ],
     },
     {
-        image:community_participation3,
-        title1:"Develop Skills That Keep",
-        title2:"You Moving Confidently",
-        paragraph1:"Your dream of moving confidently in your community and staying prepared for any task can come true with our comprehensive skill development program. Our experienced team of support workers prepares a plan, keeping your goals and aspirations in mind, and implements it with precision and care to help you develop the skills you need to actively engage in your community and show everyone what you are capable of.",
-        paragraph2:"We help you find an ideal way out of your suffocating and frustrating life and live the way you have always dreamed of.",
+        image: community_participation3,
+        title1: "Develop Skills That Keep",
+        title2: "You Moving Confidently",
+        paragraph1: "Your dream of moving confidently in your community and staying prepared for any task can come true with our comprehensive skill development program. Our experienced team of support workers prepares a plan, keeping your goals and aspirations in mind, and implements it with precision and care to help you develop the skills you need to actively engage in your community and show everyone what you are capable of.",
+        paragraph2: "We help you find an ideal way out of your suffocating and frustrating life and live the way you have always dreamed of.",
     },
     {
-        image:community_participation4,
-        title1:"Why Choose Health U Support Services",
-        title2:"for Community Participation?",
-        paragraph1:"Here is why we at Health U Support Services are an excellent choice for your community participation support requirements:",
-        bullet_points:[
+        image: community_participation4,
+        title1: "Why Choose Health U Support Services",
+        title2: "for Community Participation?",
+        paragraph1: "Here is why we at Health U Support Services are an excellent choice for your community participation support requirements:",
+        bullet_points: [
             "We offer personalised assistance with community participation to participants.",
             "We are a trusted, reliable, and reputed name in the disability sector.",
             "We ensure 100% quality in our community participation support program.",
@@ -204,19 +204,19 @@ export const community_participation = [
 
 export const capacity_building = [
     {
-        image:capacity1,
-        title1:"Unlocking Independence with Specialized",
-        title2:"Capacity Building Support",
-        paragraph1:"Being able to live life independently and doing things yourself is a major breakthrough for participants. It not only indicates the enhancement of your quality of life but also unlocks various growth opportunities that can help you ensure a future full of continued freedom. So, join hands with Health U Australia and make this dream come true.",
-        paragraph2:"We specialise in offering exceptional capacity-building support to you and assisting you in developing the skills that perfectly accompany you on your journey to achieving all your personal goals. From cooking and cleaning to finding a job, we will help you become skilled and confident in every way possible to enable you to seize the day on your own.",
+        image: capacity1,
+        title1: "Unlocking Independence with Specialized",
+        title2: "Capacity Building Support",
+        paragraph1: "Being able to live life independently and doing things yourself is a major breakthrough for participants. It not only indicates the enhancement of your quality of life but also unlocks various growth opportunities that can help you ensure a future full of continued freedom. So, join hands with Health U Australia and make this dream come true.",
+        paragraph2: "We specialise in offering exceptional capacity-building support to you and assisting you in developing the skills that perfectly accompany you on your journey to achieving all your personal goals. From cooking and cleaning to finding a job, we will help you become skilled and confident in every way possible to enable you to seize the day on your own.",
     },
     {
-        image:capacity2,
-        title1:"How Can Our Capacity Building",
-        title2:"Assistance Assist You?",
-        paragraph1:"SIL, or supported independent living, is a support program designed by the NDIS and is referred to as a core component of the scheme tailored to meet the unique needs of participants and enable their futures. It ensures that you live life independently, develop social skills, and actively participate in your community. It also provides assistance with daily tasks in your own home or in a shared living space.",
-        paragraph2:"We can assist you with various other things, but the purpose of our service will remain the same: helping you achieve your goal of long-term independence. Our capacity-building support will make you understand the real meaning of life and how you can lead it your own way.",
-        bullet_points:[
+        image: capacity2,
+        title1: "How Can Our Capacity Building",
+        title2: "Assistance Assist You?",
+        paragraph1: "SIL, or supported independent living, is a support program designed by the NDIS and is referred to as a core component of the scheme tailored to meet the unique needs of participants and enable their futures. It ensures that you live life independently, develop social skills, and actively participate in your community. It also provides assistance with daily tasks in your own home or in a shared living space.",
+        paragraph2: "We can assist you with various other things, but the purpose of our service will remain the same: helping you achieve your goal of long-term independence. Our capacity-building support will make you understand the real meaning of life and how you can lead it your own way.",
+        bullet_points: [
             "We can help you learn how to cook.",
             "We can help you learn how to dress yourself.",
             "We can assist you in developing a strict daily routine and self-management skills.",
@@ -227,12 +227,12 @@ export const capacity_building = [
         ]
     },
     {
-        image:capacity3,
-        title1:"Why Choose Us for",
-        title2:"Capacity Building Support?",
-        paragraph1:"We are a leading name in the disability sector for capacity-building support. Here are a few reasons why you should choose us to improve your quality of life:",
-        paragraph2:"Let’s get you the opportunity to regain your stability and mobility!",
-        bullet_points:[
+        image: capacity3,
+        title1: "Why Choose Us for",
+        title2: "Capacity Building Support?",
+        paragraph1: "We are a leading name in the disability sector for capacity-building support. Here are a few reasons why you should choose us to improve your quality of life:",
+        paragraph2: "Let’s get you the opportunity to regain your stability and mobility!",
+        bullet_points: [
             "We have experienced support professionals on our team.",
             "We are a trusted and reliable provider of capacity-building support.",
             "We offer personalised support for capacity building.",
@@ -245,37 +245,127 @@ export const capacity_building = [
 
 export const support_coordination = [
     {
-        image:support1,
-        title1:"Trusted Support Coordination",
-        title2:"for NDIS Participants",
-        title3:"Our",
-        title4:"Mission",
-        paragraph1:"At Health U Support Services, we are dedicated to empowering NDIS participants through exceptional support coordination. Our reliable support workers and caregivers are always ready to help you navigate the NDIS process efficiently and ensure you receive the best support needed to thrive. Our team is here to act as your advocate and coordinator, simplifying the journey and making sure you get the most out of your NDIS plan. We specialise in providing support and solutions at times of crisis, offering you a sense of relief and peace of mind.",
-        paragraph2:"Our mission is to ensure that you receive the most effective and personalised assistance to navigate the NDIS system, access essential services, and achieve your goals.",
+        image: support1,
+        title1: "Trusted Support Coordination",
+        title2: "for NDIS Participants",
+        title3: "Our",
+        title4: "Mission",
+        paragraph1: "At Health U Support Services, we are dedicated to empowering NDIS participants through exceptional support coordination. Our reliable support workers and caregivers are always ready to help you navigate the NDIS process efficiently and ensure you receive the best support needed to thrive. Our team is here to act as your advocate and coordinator, simplifying the journey and making sure you get the most out of your NDIS plan. We specialise in providing support and solutions at times of crisis, offering you a sense of relief and peace of mind.",
+        paragraph2: "Our mission is to ensure that you receive the most effective and personalised assistance to navigate the NDIS system, access essential services, and achieve your goals.",
     },
     {
-        image:support2,
-        title1:"What is NDIS",
-        title2:"support coordination?",
-        paragraph1:"NDIS Support Coordination includes a range of services designed to help the eligible participants effectively implement and manage their NDIS plan. This encompasses:",
-        paragraph2:"Our team plays a key role in maximising the benefits of the NDIS plan by providing valuable advice, solving issues, and offering ongoing support. This helps participants achieve greater independence and improve their quality of life.",
-        bullet_points:[
-            {keyword:"Plan Implementation:", text:"Helping the participants to understand and implement their NDIS plan."},
-           { keyword:"Service Coordination:", text:" Connecting you with the best NDIS service providers and ensuring that their services are incorporated into your overall support plan."},
-           {keyword:"Monitoring and Reviewing:", text:" Regularly review the participant’s support plan and services to ensure the team continues to meet your needs and adjust them as necessary."}
+        image: support2,
+        title1: "What is NDIS",
+        title2: "support coordination?",
+        paragraph1: "NDIS Support Coordination includes a range of services designed to help the eligible participants effectively implement and manage their NDIS plan. This encompasses:",
+        paragraph2: "Our team plays a key role in maximising the benefits of the NDIS plan by providing valuable advice, solving issues, and offering ongoing support. This helps participants achieve greater independence and improve their quality of life.",
+        bullet_points: [
+            { keyword: "Plan Implementation:", text: "Helping the participants to understand and implement their NDIS plan." },
+            { keyword: "Service Coordination:", text: " Connecting you with the best NDIS service providers and ensuring that their services are incorporated into your overall support plan." },
+            { keyword: "Monitoring and Reviewing:", text: " Regularly review the participant’s support plan and services to ensure the team continues to meet your needs and adjust them as necessary." }
         ]
     },
     {
-        image:support3,
-        title1:"What Distinguishes",
-        title2:"Us from the Rest?",
-        paragraph2:"We are here to provide you with the support you need to live a fulfilling and independent life. Trust us to be your reliable partner in navigating the NDIS process to better health and well-being, always prioritising your needs and well-being.",
-        bullet_points:[
-            {keyword:"Experienced Professionals:", text:"Our highly skilled and knowledgeable support coordinators have been in the sector for years."},
-           { keyword:"Enhanced Efficiency:", text:" We aim to improve the efficiency of our participants by providing specialised care to help them lead independent lives."},
-           {keyword:"Commitment to Quality", text:" Our primary focus is on delivering high-quality, personalised support that leads to better outcomes for you."},
-           {keyword:"Tailored Approach", text:" RTailored Approach: We offer customised support that is designed specifically to meet your unique needs and goals, ensuring you feel understood and valued."},
-           {keyword:"Comprehensive Service", text:"From initial planning to ongoing management, our experts are well renowned for providing complete support throughout your NDIS journey."},
+        image: support3,
+        title1: "What Distinguishes",
+        title2: "Us from the Rest?",
+        paragraph2: "We are here to provide you with the support you need to live a fulfilling and independent life. Trust us to be your reliable partner in navigating the NDIS process to better health and well-being, always prioritising your needs and well-being.",
+        bullet_points: [
+            { keyword: "Experienced Professionals:", text: "Our highly skilled and knowledgeable support coordinators have been in the sector for years." },
+            { keyword: "Enhanced Efficiency:", text: " We aim to improve the efficiency of our participants by providing specialised care to help them lead independent lives." },
+            { keyword: "Commitment to Quality", text: " Our primary focus is on delivering high-quality, personalised support that leads to better outcomes for you." },
+            { keyword: "Tailored Approach", text: " RTailored Approach: We offer customised support that is designed specifically to meet your unique needs and goals, ensuring you feel understood and valued." },
+            { keyword: "Comprehensive Service", text: "From initial planning to ongoing management, our experts are well renowned for providing complete support throughout your NDIS journey." },
+        ]
+    },
+]
+
+
+export const assist_in_self_care = [
+    {
+        image: assist_self1,
+        title1: "Compassionate Assistance in",
+        title2: "Personal Care Routine",
+        paragraph1: "Looking for help with personal or self-care? At Health U Support Services, we understand how personal care is vital for maintaining dignity, independence, and overall well-being. Thus, our tailored approach to personal care routine ensures that your needs, goals and interests are met with the utmost respect and compassion. Be it in your own home or a shared facility, we can reassure you knowing your loved one’s self-care needs are being met.",
+        paragraph2: "As a reliable NDIS provider, we are committed to delivering high-quality care & support that enhances your daily life. Whether you require assistance with bathing, grooming, dressing, or any other personal care activities, our caring and homely support workers are here to help you live comfortably and confidently in your own home. After all, home is where the heart is!",
+        paragraph3: "Sharing your day with someone who truly understands your unique way of doing things makes your self-care experience a positive one. For respectful personal care assistance, contact our team to find a suitable plan for you.",
+    },
+    {
+        image: assist_self2,
+        title1: "What is Included in Our Personal ",
+        title2: "/Self-care Assistance?",
+        paragraph1: "Our personal care services at Health U Support Services cover a wide range of tasks to help you maintain your independence and dignity. We tailor our services to your specific needs, working closely with you to ensure the best possible care.",
+        bullet_title: "These include:",
+        bullet_points: [
+            { keyword: "Bathing and Showering:", text: "Assistance with bathing, showering, and maintaining personal hygiene." },
+            { keyword: "Dressing and Grooming: ", text: "Help with dressing, grooming, and personal appearance." },
+            { keyword: "Mobility and Transferring:", text: " Support with moving around your home and transferring between positions (e.g., from bed to wheelchair)." },
+            { keyword: "Toileting Support:", text: "Assistance with toileting and continence management." },
+            { keyword: "Oral Care:", text: "Assistance with brushing teeth and other oral hygiene routines." },
+            { keyword: "Medication Assistance:", text: "Help with taking prescribed medication at the right time." },
+            { keyword: "Skin Care: ", text: "Assistance with applying creams or lotions to maintain healthy skin." },
+            { keyword: "Feeding Support: ", text: "Assistance with eating and drinking, ensuring your nutritional needs are met." },
+            { keyword: "Assistive Technology: ", text: "Fitting aids, including hearing and continence aids." }
+        ]
+    },
+    {
+        image: assist_self3,
+        title1: "Some Compelling Reasons",
+        title2: "To Choose Us",
+        paragraph1: "We prioritise on –",
+        bullet_points: [
+            {keyword: "", text: "Comfort, dignity, and independence" },
+            {keyword: "", text: "Reliable, respectful, and person-centred care" },
+            {keyword: "", text: " Our primary focus is on delivering high-quality, personalised support that leads to better outcomes for you." },
+            {keyword: "", text: " Compassionate and friendly support workers" },
+            {keyword: "", text: "Transparent and flexible services" },
+        ]
+    },
+]
+
+export const assist_in_transport = [
+    {
+        image: assist_transport1,
+        title1: "Your Compassionate Partner in",
+        title2: "NDIS Transport Assistance",
+        paragraph1: "Welcome to Health U Australia.",
+        paragraph2: "With our deep understanding of the vital role transportation plays in the NDIS participant’s journey towards independence and well-being, we are your trusted partner in NDIS Transport Assistance. Our specialised transport services and commitment to excellence, backed by years of industry experience, are what set us apart from the rest. For us, your comfort and safety are crucial. Hence, our services are specially designed to assist you in accessing medical appointments, participants in community activities, and social engagements.",
+        },
+    {
+        image: assist_transport2,
+        title1: "Easily Accessible Wheelchair Vehicles",
+        title2: "for Improved Comfort & Safety",
+        paragraph1: "Be it commuting to work, attending medical appointments or grocery shopping, our fully accessible and customised wheelchair vehicles can end your travelling woes for good. We help participants enjoy a smooth and safe journey to their destination with specialised wheelchair-accessible transport that comes with modern ramp fits, secure tie-downs and other safety restraints. Our courteous drivers help participants get in and out of vehicles during emergencies and ensure they are well-secured inside the cars. Even if you want to travel with your designed support worker, we have that option open as well, as our vehicles are pretty spacious.",
+    },
+    {
+        image: assist_transport3,
+        title1: "What’s Included in Our",
+        title2: "Transport Assistance?",
+        paragraph1: "Under the NDIS, transport assistance is available for eligible participants who need help with travelling to and from services and activities that support their goals. This includes:",
+        paragraph2: "We prioritise your needs and work closely with you to provide the best possible support.",
+        bullet_points: [
+            { keyword: "Medical and Health Appointments:", text: "Transport to appointments with healthcare professionals." },
+            { keyword: "Community and Social Activities: ", text: "Assistance with attending community events and taking part in social activities that foster personal growth and well-being." },
+            { keyword: "Daily Living Needs:", text: "Offering the best support for trips related to daily living. This includes grocery shopping, visiting shopping malls or attending community programs." },
+        ]
+    },
+    {
+        image:assist_transport4,
+        title1: "Safe & Reliable NDIS",
+        title2: "Transport Assistance",
+        paragraph1: "Our professionals, with years of experience in the industry, understand the challenges of navigating transportation for NDIS participants, especially those with mobility restrictions. We are committed to providing you with reliable and timely transport services tailored to your individual needs, ensuring your safety and comfort.",
+        paragraph2: "Our vehicles are not only well-maintained but also equipped with the necessary safety measures to ensure your safety and comfort, especially during these challenging times. Our team is highly trained to follow all safety protocols, giving you a sense of relief and peace of mind.",
+    },
+    {
+        image: assist_transport5,
+        title1: "What Makes Us",
+        title2: "Your Ideal Choice?",
+        paragraph1: "We are well renowned in the sector for offering a range of solutions that improve mobility and help you stay connected with others.",
+        paragraph2: "When we are here to help and provide the best assistance with travel and transport, you can rest assured that your safety is our top priority. We are committed to keeping you secure and protected throughout your journey.",
+        bullet_points: [
+            {keyword: "Tailored Services: ", text: "We specialise in offering bespoke transport solutions that are well-designed specifically for NDIS participants." },
+            {keyword: "Flexible Scheduling: ", text: "Reliable, respectful, and person-centred care" },
+            {keyword: "Comprehensive Support:", text: " From initial booking to completion of your journey, our team will always be by your side to offer end-to-end assistance. You can trust us to make your transport experience smooth and enjoyable. We are committed to providing the best support, ensuring you feel reassured and cared for throughout your journey." },
         ]
     },
 ]

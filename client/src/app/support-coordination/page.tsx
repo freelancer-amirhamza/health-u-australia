@@ -5,7 +5,7 @@ import { TiTick } from 'react-icons/ti';
 import Link from 'next/link';
 import {  support_coordination,  } from 'config/page'
 
-const Capacity = () => {
+const SupportCoordination = () => {
     return (
         <div className="flex flex-col justify-center items-center w-full h-full ">
             <PageBanner title='Support Coordination' path='/support-coordination' />
@@ -49,4 +49,4 @@ const Capacity = () => {
     )
 }
 
-export default Capacity
+export default SupportCoordination
