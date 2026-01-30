@@ -1,4 +1,4 @@
-import { aryan, brain, capacity1, capacity2, capacity3, community_participation1, community_participation2, community_participation3, community_participation4, evelyn, jose, service1, service2, service3, service4, service5, service6, service7, service8, sil_image1, sil_image2, sil_image3, sil_image4 } from "assets"
+import { aryan, brain, capacity1, capacity2, capacity3, community_participation1, community_participation2, community_participation3, community_participation4, evelyn, jose, service1, service2, service3, service4, service5, service6, service7, service8, sil_image1, sil_image2, sil_image3, sil_image4, support1, support2, support3 } from "assets"
 
 
 export const nav_items = [
@@ -238,6 +238,44 @@ export const capacity_building = [
             "We offer personalised support for capacity building.",
             "We support your unique choices and decisions about our service.",
             "We empower your independence in a short period of time.",
+        ]
+    },
+]
+
+
+export const support_coordination = [
+    {
+        image:support1,
+        title1:"Trusted Support Coordination",
+        title2:"for NDIS Participants",
+        title3:"Our",
+        title4:"Mission",
+        paragraph1:"At Health U Support Services, we are dedicated to empowering NDIS participants through exceptional support coordination. Our reliable support workers and caregivers are always ready to help you navigate the NDIS process efficiently and ensure you receive the best support needed to thrive. Our team is here to act as your advocate and coordinator, simplifying the journey and making sure you get the most out of your NDIS plan. We specialise in providing support and solutions at times of crisis, offering you a sense of relief and peace of mind.",
+        paragraph2:"Our mission is to ensure that you receive the most effective and personalised assistance to navigate the NDIS system, access essential services, and achieve your goals.",
+    },
+    {
+        image:support2,
+        title1:"What is NDIS",
+        title2:"support coordination?",
+        paragraph1:"NDIS Support Coordination includes a range of services designed to help the eligible participants effectively implement and manage their NDIS plan. This encompasses:",
+        paragraph2:"Our team plays a key role in maximising the benefits of the NDIS plan by providing valuable advice, solving issues, and offering ongoing support. This helps participants achieve greater independence and improve their quality of life.",
+        bullet_points:[
+            {keyword:"Plan Implementation:", text:"Helping the participants to understand and implement their NDIS plan."},
+           { keyword:"Service Coordination:", text:" Connecting you with the best NDIS service providers and ensuring that their services are incorporated into your overall support plan."},
+           {keyword:"Monitoring and Reviewing:", text:" Regularly review the participant’s support plan and services to ensure the team continues to meet your needs and adjust them as necessary."}
+        ]
+    },
+    {
+        image:support3,
+        title1:"What Distinguishes",
+        title2:"Us from the Rest?",
+        paragraph2:"We are here to provide you with the support you need to live a fulfilling and independent life. Trust us to be your reliable partner in navigating the NDIS process to better health and well-being, always prioritising your needs and well-being.",
+        bullet_points:[
+            {keyword:"Experienced Professionals:", text:"Our highly skilled and knowledgeable support coordinators have been in the sector for years."},
+           { keyword:"Enhanced Efficiency:", text:" We aim to improve the efficiency of our participants by providing specialised care to help them lead independent lives."},
+           {keyword:"Commitment to Quality", text:" Our primary focus is on delivering high-quality, personalised support that leads to better outcomes for you."},
+           {keyword:"Tailored Approach", text:" RTailored Approach: We offer customised support that is designed specifically to meet your unique needs and goals, ensuring you feel understood and valued."},
+           {keyword:"Comprehensive Service", text:"From initial planning to ongoing management, our experts are well renowned for providing complete support throughout your NDIS journey."},
         ]
     },
 ]

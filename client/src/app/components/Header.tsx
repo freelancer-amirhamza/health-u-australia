@@ -26,16 +26,16 @@ const Header = () => {
         </Link>
         {/* desktop menu */}
         <nav className='w-full flex justify-end'>
-          <ul className=" w-full items-center justify-end hidden transition-all duration-500 lg:flex ">
+          <ul className=" w-full items-center justify-end hidden  transition-all duration-500 lg:flex ">
             {nav_items.map((item, index)=>(
-                <li key={index} className=' py-3 px-4 cursor-pointer last:hidden relative transition-all duration-500 text-center flex    hover:text-primary text-base group  '>
-                  {item?.path ? <Link href={item?.path}>{item.label} </Link> : <span>{item.label}</span> }
+                <li key={index} className=' py-3 px-4 cursor-pointer last:hidden relative transition-all duration-500 text-center flex font-medium focus-within:text-primary  hover:text-primary text-base group  '>
+                  {item?.path ? <Link className='font-medium' href={item?.path}>{item.label} </Link> : <span className='font-medium'>{item.label}</span> }
                   {item?.options &&
                   <ul className="absolute bg-secondary top-12  text-neutral-900 flex-col w-full min-w-56 hidden transition-all duration-500  group-hover:flex ">
                     {item?.options.map((itm, idx)=>(
                       <li key={idx}
                       className='flex text-start hover:bg-primary hover:text-white py-3 px-5 font-medium transition-all duration-300  '>
-                        <Link className='w-full flex' href={itm?.path}>{itm.label}</Link>
+                        <Link className='w-full flex font-medium' href={itm?.path}>{itm.label}</Link>
                       </li>
                     ))}
                   </ul>

@@ -25,8 +25,12 @@ import community_participation4 from "assets/images/community/community-particip
 import capacity1 from "assets/images/capacity/capacity-building-img01.jpg"
 import capacity2 from "assets/images/capacity/capacity-building-img02.jpg"
 import capacity3 from "assets/images/capacity/capacity-building-img03.jpg"
+import support1 from "assets/images/support/support-coordination-img01.jpg"
+import support2 from "assets/images/support/support-coordination-img02.jpg"
+import support3 from "assets/images/support/support-coordination-img03.jpg"
 export {
     service1, service2, service3, service4,service5,service6,service7,service8,aryan, brain, evelyn,jose,
     email_icon,clack_icon,call_icon,sil_image1,sil_image2,sil_image3,sil_image4,community_participation1,
     community_participation2,community_participation3,community_participation4,capacity1,capacity2,capacity3,
+    support1,support2,support3,
 }
