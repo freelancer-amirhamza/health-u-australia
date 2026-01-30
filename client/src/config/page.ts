@@ -1,4 +1,4 @@
-import { aryan, brain, community_participation1, community_participation2, community_participation3, community_participation4, evelyn, jose, service1, service2, service3, service4, service5, service6, service7, service8, sil_image1, sil_image2, sil_image3, sil_image4 } from "assets"
+import { aryan, brain, capacity1, capacity2, capacity3, community_participation1, community_participation2, community_participation3, community_participation4, evelyn, jose, service1, service2, service3, service4, service5, service6, service7, service8, sil_image1, sil_image2, sil_image3, sil_image4 } from "assets"
 
 
 export const nav_items = [
@@ -202,47 +202,42 @@ export const community_participation = [
     },
 ]
 
-export const compassion_in_action = [
+export const capacity_building = [
     {
-        image:sil_image1,
-        title1:"Live an Independent & Fulfilling Life with Our",
-        title2:"Supported Independent Living Program",
-        paragraph1:"We at Health U Support Services are on a mission to empower participants with our exceptional care and support. Whether you want support to live comfortably in your own home or want to move to another place for a change in scenario, our specialised supported independent living program will foster an environment where you can thrive.",
-        paragraph2:"From supporting you with your everyday activities to building your skills, our service will cover everything to help you live an independent and fulfilling life. Whether you want our support staff to attend to you 24/7 or just a few hours in a day, we will plan our assistance depending on your needs and circumstances.",
+        image:capacity1,
+        title1:"Unlocking Independence with Specialized",
+        title2:"Capacity Building Support",
+        paragraph1:"Being able to live life independently and doing things yourself is a major breakthrough for participants. It not only indicates the enhancement of your quality of life but also unlocks various growth opportunities that can help you ensure a future full of continued freedom. So, join hands with Health U Australia and make this dream come true.",
+        paragraph2:"We specialise in offering exceptional capacity-building support to you and assisting you in developing the skills that perfectly accompany you on your journey to achieving all your personal goals. From cooking and cleaning to finding a job, we will help you become skilled and confident in every way possible to enable you to seize the day on your own.",
     },
     {
-        image:sil_image2,
-        title1:"What is",
-        title2:"SIL?",
+        image:capacity2,
+        title1:"How Can Our Capacity Building",
+        title2:"Assistance Assist You?",
         paragraph1:"SIL, or supported independent living, is a support program designed by the NDIS and is referred to as a core component of the scheme tailored to meet the unique needs of participants and enable their futures. It ensures that you live life independently, develop social skills, and actively participate in your community. It also provides assistance with daily tasks in your own home or in a shared living space.",
-        paragraph2:"If you want more detailed knowledge about SIL, feel free to reach out to our team at any time.",
-    },
-    {
-        image:sil_image3,
-        title1:"Live an Independent & Fulfilling Life with Our",
-        title2:"Supported Independent Living Program",
-        paragraph1:"It should come to your attention that to opt for SIL assistance, you need to be eligible for the program. To confirm your",
-        paragraph2:"If you are this type of individual, we are ready to take our professional SIL assistance to your doorstep and arrange a shared living facility for you to provide you with the support you need to ensure a future of continued independence.",
-        bullet_title:"eligibility, you must meet the following criteria:",
+        paragraph2:"We can assist you with various other things, but the purpose of our service will remain the same: helping you achieve your goal of long-term independence. Our capacity-building support will make you understand the real meaning of life and how you can lead it your own way.",
         bullet_points:[
-            "The individual should have a significant or permanent disability that impacts their ability to live independently without professional support.",
-            "The individual needs ongoing support with daily living activities, personal care, or social tasks",
-            "The individual should have goals related to achieving greater independence, improving community participation, or enhancing quality of life."
+            "We can help you learn how to cook.",
+            "We can help you learn how to dress yourself.",
+            "We can assist you in developing a strict daily routine and self-management skills.",
+            "We can assist you in building your understanding of personal safety.",
+            "We can help you learn how to bathe.",
+            "We can help build your social and communication skills.",
+            "We can assist you in working towards your employment and help you find a suitable job.",
         ]
     },
     {
-        image:sil_image4,
-        title1:"Why Choose Health U Support",
-        title2:"Services for SIL Assistance?",
-        paragraph1:"We at Health U Support Services support you the way you are and in the way you want. Here are a few reasons why we are an",
-        bullet_title:"excellent choice for your SIL assistance requirements:",
+        image:capacity3,
+        title1:"Why Choose Us for",
+        title2:"Capacity Building Support?",
+        paragraph1:"We are a leading name in the disability sector for capacity-building support. Here are a few reasons why you should choose us to improve your quality of life:",
+        paragraph2:"Let’s get you the opportunity to regain your stability and mobility!",
         bullet_points:[
-            "We are a trusted and reliable provider of SIL assistance.",
-            "We take a person-centred approach to NDIS supported independent living.",
-            "We have experienced support workers on our team to assist you.",
-            "We create supportive and comfortable shared spaces for participants.",
-            "We prioritise your safety and security and empower your independence.",
-            "We respect your choices and decisions about SIL support.",
+            "We have experienced support professionals on our team.",
+            "We are a trusted and reliable provider of capacity-building support.",
+            "We offer personalised support for capacity building.",
+            "We support your unique choices and decisions about our service.",
+            "We empower your independence in a short period of time.",
         ]
     },
 ]

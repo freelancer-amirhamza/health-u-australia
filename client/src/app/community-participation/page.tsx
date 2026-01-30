@@ -36,7 +36,7 @@ const Community = () => {
                     <h1 className="text-3xl font-bold  ">It’s Time to Bravely Participate in Your Community!</h1>
                     <div className='w-14 h-0.75 bg-primary items-center  ' />
                     <p className=" text-lg text-secondary-text font-medium text-center ">
-                        Bravely move forward to participate in your community, as we have got your back. <Link href={"/contact"}> Get in touch</Link>  with our team to learn how they can make this possible.
+                        Bravely move forward to participate in your community, as we have got your back. <Link className='text-blue-600' href={"/contact"}> Get in touch</Link>  with our team to learn how they can make this possible.
                     </p>
                     <div className="flex items-center justify-center gap-10">
                         <Link href={"/contact-us"} className='text-white text-lg font-semibold px-9 py-3.5 rounded-full bg-primary hover:bg-secondary transition-colors duration-300 ' >Enquire Now</Link>
