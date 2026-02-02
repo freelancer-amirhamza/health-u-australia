@@ -36,10 +36,21 @@ import assist_transport2 from "assets/images/assist-transport/assist-in-transpor
 import assist_transport3 from "assets/images/assist-transport/assist-in-transport-img02.jpg"
 import assist_transport4 from "assets/images/assist-transport/assist-in-transport-img03.jpg"
 import assist_transport5 from "assets/images/assist-transport/assist-in-transport-img04.jpg"
+import normanhurst_img01 from "assets/images/Normanhurst/1.png"
+import normanhurst_img02 from "assets/images/Normanhurst/2.png"
+import normanhurst_img03 from "assets/images/Normanhurst/3.png"
+import normanhurst_img04 from "assets/images/Normanhurst/4.png"
+import normanhurst_img05 from "assets/images/Normanhurst/5.png"
+import normanhurst_img06 from "assets/images/Normanhurst/6.png"
+import normanhurst_img07 from "assets/images/Normanhurst/7.png"
+import normanhurst_img08 from "assets/images/Normanhurst/8.png"
+import normanhurst_img09 from "assets/images/Normanhurst/9.png"
+import normanhurst_img10 from "assets/images/Normanhurst/10.png"
 export {
     service1, service2, service3, service4,service5,service6,service7,service8,aryan, brain, evelyn,jose,
     email_icon,clack_icon,call_icon,sil_image1,sil_image2,sil_image3,sil_image4,community_participation1,
     community_participation2,community_participation3,community_participation4,capacity1,capacity2,capacity3,
     support1,support2,support3,assist_self1,assist_self2,assist_self3,assist_transport1,assist_transport2,
-    assist_transport3,assist_transport4,assist_transport5,
+    assist_transport3,assist_transport4,assist_transport5,normanhurst_img01,normanhurst_img02,normanhurst_img03,normanhurst_img04,
+    normanhurst_img05,normanhurst_img06,normanhurst_img07,normanhurst_img08,normanhurst_img09,normanhurst_img10,
 }
