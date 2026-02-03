@@ -46,6 +46,28 @@ import normanhurst_img07 from "assets/images/Normanhurst/7.png"
 import normanhurst_img08 from "assets/images/Normanhurst/8.png"
 import normanhurst_img09 from "assets/images/Normanhurst/9.png"
 import normanhurst_img10 from "assets/images/Normanhurst/10.png"
+import property_img01 from "assets/images/2026/10/property-img01.jpg"
+import property_img02 from "assets/images/2026/10/property-img02.jpg"
+import property_img03 from "assets/images/2026/10/property-img03.jpg"
+import property_img04 from "assets/images/2026/10/property-img04.jpg"
+import property_img05 from "assets/images/2026/10/property-img05.jpg"
+import property_img06 from "assets/images/2026/10/property-img06.jpg"
+import property_img07 from "assets/images/2026/10/property-img07.jpg"
+import property_img08 from "assets/images/2026/10/property-img08.jpg"
+import property_img09 from "assets/images/2026/10/property-img09.jpg"
+import property_img10 from "assets/images/2026/10/property-img10.jpg"
+import property_img11 from "assets/images/2026/10/property-img11.jpg"
+import property_img12 from "assets/images/2026/10/property-img12.jpg"
+import property_img13 from "assets/images/2026/10/property-img13.jpg"
+import property_img14 from "assets/images/2026/10/property-img14.jpg"
+import property_img15 from "assets/images/2026/10/property-img15.jpg"
+import property_img16 from "assets/images/2026/10/property-img16.jpg"
+import property_img17 from "assets/images/2026/10/property-img17.jpg"
+import property_img18 from "assets/images/2026/10/property-img18.jpg"
+import property_img19 from "assets/images/2026/10/property-img19.jpg"
+import property_img20 from "assets/images/2026/10/property-img20.jpg"
+import property_img21 from "assets/images/2026/10/property-img21.jpg"
+import property_img22 from "assets/images/2026/10/property-img22.jpg"
 export {
     service1, service2, service3, service4,service5,service6,service7,service8,aryan, brain, evelyn,jose,
     email_icon,clack_icon,call_icon,sil_image1,sil_image2,sil_image3,sil_image4,community_participation1,
@@ -53,4 +75,8 @@ export {
     support1,support2,support3,assist_self1,assist_self2,assist_self3,assist_transport1,assist_transport2,
     assist_transport3,assist_transport4,assist_transport5,normanhurst_img01,normanhurst_img02,normanhurst_img03,normanhurst_img04,
     normanhurst_img05,normanhurst_img06,normanhurst_img07,normanhurst_img08,normanhurst_img09,normanhurst_img10,
+    property_img01,property_img02,property_img03,property_img04,property_img05,property_img06,property_img07,
+    property_img08,property_img09,property_img10,property_img11,property_img12,property_img13,property_img14,
+    property_img15,property_img16,property_img17,property_img18,property_img19,property_img20,property_img21,
+    property_img22,
 }

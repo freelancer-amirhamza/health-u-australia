@@ -1,4 +1,13 @@
-import { aryan, assist_self1, assist_self2, assist_self3, assist_transport1, assist_transport2, assist_transport3, assist_transport4, assist_transport5, brain, capacity1, capacity2, capacity3, community_participation1, community_participation2, community_participation3, community_participation4, evelyn, jose, service1, service2, service3, service4, service5, service6, service7, service8, sil_image1, sil_image2, sil_image3, sil_image4, support1, support2, support3 } from "assets"
+import {
+    aryan, assist_self1, assist_self2, assist_self3, assist_transport1, assist_transport2, assist_transport3,
+    assist_transport4, assist_transport5, brain, capacity1, capacity2, capacity3, community_participation1,
+    community_participation2, community_participation3, community_participation4, evelyn, jose,
+    property_img01, property_img02, property_img03, property_img04, property_img05, property_img06, property_img07,
+    property_img09, property_img10, property_img11, property_img12, property_img13, property_img14,
+    property_img15, property_img16, property_img17, property_img18, property_img19, property_img20, property_img21,
+    property_img22, property_img08, service1, service2, service3, service4, service5, service6, service7, service8,
+    sil_image1, sil_image2, sil_image3, sil_image4, support1, support2, support3
+} from "assets"
 
 
 export const nav_items = [
@@ -314,11 +323,11 @@ export const assist_in_self_care = [
         title2: "To Choose Us",
         paragraph1: "We prioritise on –",
         bullet_points: [
-            {keyword: "", text: "Comfort, dignity, and independence" },
-            {keyword: "", text: "Reliable, respectful, and person-centred care" },
-            {keyword: "", text: " Our primary focus is on delivering high-quality, personalised support that leads to better outcomes for you." },
-            {keyword: "", text: " Compassionate and friendly support workers" },
-            {keyword: "", text: "Transparent and flexible services" },
+            { keyword: "", text: "Comfort, dignity, and independence" },
+            { keyword: "", text: "Reliable, respectful, and person-centred care" },
+            { keyword: "", text: " Our primary focus is on delivering high-quality, personalised support that leads to better outcomes for you." },
+            { keyword: "", text: " Compassionate and friendly support workers" },
+            { keyword: "", text: "Transparent and flexible services" },
         ]
     },
 ]
@@ -330,7 +339,7 @@ export const assist_in_transport = [
         title2: "NDIS Transport Assistance",
         paragraph1: "Welcome to Health U Australia.",
         paragraph2: "With our deep understanding of the vital role transportation plays in the NDIS participant’s journey towards independence and well-being, we are your trusted partner in NDIS Transport Assistance. Our specialised transport services and commitment to excellence, backed by years of industry experience, are what set us apart from the rest. For us, your comfort and safety are crucial. Hence, our services are specially designed to assist you in accessing medical appointments, participants in community activities, and social engagements.",
-        },
+    },
     {
         image: assist_transport2,
         title1: "Easily Accessible Wheelchair Vehicles",
@@ -350,7 +359,7 @@ export const assist_in_transport = [
         ]
     },
     {
-        image:assist_transport4,
+        image: assist_transport4,
         title1: "Safe & Reliable NDIS",
         title2: "Transport Assistance",
         paragraph1: "Our professionals, with years of experience in the industry, understand the challenges of navigating transportation for NDIS participants, especially those with mobility restrictions. We are committed to providing you with reliable and timely transport services tailored to your individual needs, ensuring your safety and comfort.",
@@ -363,9 +372,14 @@ export const assist_in_transport = [
         paragraph1: "We are well renowned in the sector for offering a range of solutions that improve mobility and help you stay connected with others.",
         paragraph2: "When we are here to help and provide the best assistance with travel and transport, you can rest assured that your safety is our top priority. We are committed to keeping you secure and protected throughout your journey.",
         bullet_points: [
-            {keyword: "Tailored Services: ", text: "We specialise in offering bespoke transport solutions that are well-designed specifically for NDIS participants." },
-            {keyword: "Flexible Scheduling: ", text: "Reliable, respectful, and person-centred care" },
-            {keyword: "Comprehensive Support:", text: " From initial booking to completion of your journey, our team will always be by your side to offer end-to-end assistance. You can trust us to make your transport experience smooth and enjoyable. We are committed to providing the best support, ensuring you feel reassured and cared for throughout your journey." },
+            { keyword: "Tailored Services: ", text: "We specialise in offering bespoke transport solutions that are well-designed specifically for NDIS participants." },
+            { keyword: "Flexible Scheduling: ", text: "Reliable, respectful, and person-centred care" },
+            { keyword: "Comprehensive Support:", text: " From initial booking to completion of your journey, our team will always be by your side to offer end-to-end assistance. You can trust us to make your transport experience smooth and enjoyable. We are committed to providing the best support, ensuring you feel reassured and cared for throughout your journey." },
         ]
     },
 ]
+
+export const sil_property = [property_img01, property_img02, property_img03, property_img04, property_img05, property_img06, property_img07,
+    property_img08, property_img09, property_img10, property_img11, property_img12, property_img13, property_img14,
+    property_img15, property_img16, property_img17, property_img18, property_img19, property_img20, property_img21,
+    property_img22,]
