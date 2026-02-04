@@ -17,24 +17,31 @@ const Gallery = () => {
                     <div className='w-20 h-1 bg-primary' />
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 lg:grid-cols-4  place-content-around  w-full ">
-                    {sil_property.map((img,index)=>(
-                        <div key={index} onClick={()=>{setIsOpen(!isOpen); setCurrentId(index)}} className="relative h-full w-full group ">
-                            <Image src={img} alt={`sil property`+index} className='object-cover  relative rounded-md max-h-72  w-full h-full' />
+                    {sil_property.map((img, index) => (
+                        <div key={index} onClick={() => { setIsOpen(!isOpen); setCurrentId(index) }} className="relative h-full w-full group ">
+                            <Image src={img} alt={`sil property` + index} className='object-cover  relative rounded-md max-h-72  w-full h-full' />
                             <div className="absolute bg-black/70 flex items-center transition-all duration-700 justify-center hover:opacity-100 opacity-0 top-0 rounded-md cursor-pointer h-full w-full border-8 border-transparent ">
-                            <div className="bg-black h-12 w-12 group-hover:opacity-100 opacity-0 transition-all duration-700 flex items-center justify-center rounded-full ">
-                                <FaPlus className='bg-white p-0.5 rounded-full text-xl m-0 '  />
-                            </div>
+                                <div className="bg-black h-12 w-12 group-hover:opacity-100 opacity-0 transition-all duration-700 flex items-center justify-center rounded-full ">
+                                    <FaPlus className='bg-white p-0.5 rounded-full text-xl m-0 ' />
+                                </div>
                             </div>
 
                         </div>
                     ))}
                 </div>
-                <div className="flex items-center justify-center w-full h-full">
-                    <video >
-                    <source src="/public/videos/houseViewing.mp4" width={100} height={100} />
+                <div className="flex items-center justify-center w-full py-10">
+                    <video
+                        className='w-full max-w-md object-scale-down max-h-200 h-auto rounded-lg bg-black'
+                        controls
+                        preload="metadata"
+                        playsInline
+                        autoPlay
+                    >
+                        <source src="/videos/houseViewing.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
                     </video>
                 </div>
-{isOpen && <SlideModal close={()=>setIsOpen(false)} currentId={currentId} />}
+                {isOpen && <SlideModal close={() => setIsOpen(false)} currentId={currentId} />}
             </div>
         </div>
     )
