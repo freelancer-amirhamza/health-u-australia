@@ -165,6 +165,84 @@ export const sil_house = [
     },
 ]
 
+export const sil_house_details = [
+    {
+        title1: "STA/Respite",
+        title2: "accommodation",
+        paragraph1: "If you want to enjoy solace and peace away from your usual home for a short period, our specialised support for STA, including Respite care can help you enjoy complete freedom from the mundane. You might share a short stay with other participants or by yourself and try new things while receiving personalised assistance with various activities from our support staff.",
+        paragraph2: "Below are the inclusions that are covered –",
+        paragraph3: "3 bed 3 bath house in great location and community",
+        paragraph4: "This spacious character home is situated in a convenient location – just a 5-minute walk to the waterside, Meadowbank Train Station, Ferry Wharf, Local parks & just a stroll away from shops and other amenities.",
+        paragraph5: "We are excited to offer beautifully designed Supported Independent Living (SIL) accommodation at Bowden Street, Ryde, tailored specifically to NDIS participants. This modern, spacious property offers a comfortable, supportive environment to help residents live independently while receiving the right level of support for their individual needs.",
+        paragraph6: "Safe, secure, and welcoming community environment",
+        bullet_title: "eligibility, you must meet the following criteria:",
+        bullet_points: [
+            "The individual should have a significant or permanent disability that impacts their ability to live independently without professional support.",
+            "The individual needs ongoing support with daily living activities, personal care, or social tasks",
+            "The individual should have goals related to achieving greater independence, improving community participation, or enhancing quality of life."
+        ]
+    },
+    {
+        title1: "STA/Respite",
+        title2: "accommodation",
+        table_contents: [
+            {
+                heading: "The building",
+                options: ["Single storey"]
+            },
+            {
+                heading: "Access",
+                options: [
+                    "Ramp access", "Wide pathways"
+                ]
+            },
+            {
+                heading: "Environment",
+                options: ["Air conditioning", "Heating"]
+            },
+            {
+                heading: "Outside",
+                options: ["Secure backyard", "Secure front-yard", "Raised garden bed", "Garden", "Deck/verandah", "Outdoor living/entertainment area"]
+            },
+            {
+                heading: "Shared Living",
+                options: ["Storage for personal equipment", "Window", "Built-in robe", "Private living space", "Direct access to yard / courtyard / garden",
+                    "Private/ensuite bathroom", "Shared kitchen", "Shared laundry"]
+            },
+            {
+                heading: "Registered SDA:",
+                options: ["No"]
+            },
+            {
+                heading: "Stay Duration",
+                options: ["Permanent", "Medium term", "Short term"]
+            },
+        ]
+    },
+    {
+        bullet_points: [
+            { keyword: "Flexible Support Levels:", text: " We cater to a wide range of support needs, from minimal to complex. Our team will work with you to create a customised care plan based on your individual goals and preferences." },
+            { keyword: "Inclusive Environment: ", text:"We welcome people of all ages, backgrounds, and abilities. Whether you require short-term, long-term, or respite care, we can accommodate your needs." },
+            { keyword: "Easy Application Process:", text: "We’ve simplified our process to make it easier for you. Simply reach out with your inquiry, and our friendly team will guide you through the next steps, including any paperwork and assessments." },
+            { keyword:"Trial Stays Available: ", text: "Not sure if it’s the right fit? We offer trial stays so you can experience the accommodation and support services before making a decision." },
+        ]
+    },
+    {
+        options:[
+            {
+                title:"Local terrain", text:"Meadowbank wharf, Green Spaces and Parks, Proximity to Parramatta River"
+            },
+            {
+                title:"Transport", text:"Bus at your doorstep to Top Ryde and Macquarie"
+            },
+            {
+                title:"Shopping", text:"Top Ryde City Shopping Centre, Macquarie Centre, Rhodes Waterside Shopping Centre"
+            },
+        ]
+    }
+]
+
+
 export const community_participation = [
     {
         image: community_participation1,

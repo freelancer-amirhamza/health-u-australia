@@ -1,13 +1,14 @@
 import React from 'react'
 import PageBanner from 'app/UI/PageBanner'
 import Image from 'next/image'
-import ndis1 from "assets/images/about/ndis-img01.jpg"
-import ndis2 from "assets/images/about/ndis-img02.jpg"
-import ndis3 from "assets/images/about/ndis-img03.jpg"
-import ndis4 from "assets/images/about/ndis-img04.jpg"
+import icon1 from "assets/images/2026/10/icon.png"
+import icon2 from "assets/images/2026/10/icon2.png"
+import icon3 from "assets/images/2026/10/icon4.png"
 import { TiTick } from 'react-icons/ti';
 import Link from 'next/link';
-import { sil_house } from 'config/page'
+import { sil_house, sil_house_details } from 'config/page'
+import Button from 'app/UI/Button'
+import Title from 'app/UI/Title'
 
 const SilHouse = () => {
     return (
@@ -15,11 +16,10 @@ const SilHouse = () => {
             <PageBanner title='SIL House' path='/sil-house' />
             <div className="container px-5 flex flex-col items-center mx-auto justify-center w-full h-full ">
                 {sil_house.map((item, index) => (
-                    <div key={index} className={`flex flex-col gap-x-0 ${[0, 2, 4].includes(index) ? 'md:flex-row-reverse' : 'md:flex-row'} justify-center items-start w-full`}>
+                    <div key={index} className={`flex flex-col my-10 gap-x-0 ${[0, 2, 4].includes(index) ? 'md:flex-row-reverse' : 'md:flex-row'} justify-center items-start w-full`}>
                         <Image src={item.image} alt='about heath u australia' className='hover:scale-102 ease-in-out transition-all duration-500  w-full h-full md:object-scale-down inset-0 items-start justify-start p-0 m-0 ' />
                         <div className="flex flex-col w-full justify-center gap-2 mt-8   ">
-                            <h1 className="text-[27px] font-bold  ">{item.title1} <span className="text-secondary">{item.title2}</span></h1>
-                            <div className='w-14 h-0.75 bg-primary items-center  ' />
+                            <Title title1={item.title1} title2={item.title2} />
                             <p className=" flex w-full text-lg text-secondary-text font-medium  ">{item.paragraph1}</p>
                             <ul className="grid gap-2">
                                 {item?.bullet_points && <h4 className="text-xl my-3 text-secondary-text font-semibold">{item.bullet_title} </h4>}
@@ -34,6 +34,7 @@ const SilHouse = () => {
                         </div>
                     </div>
                 ))}
+                {/* blogs section ends */}
 
                 <div className="flex flex-col w-full justify-center gap-4 h-full items-center bg-gray-100 p-10    ">
                     <h1 className="text-3xl font-bold  ">Get Started with Our Exceptional SIL Assistance!</h1>
@@ -42,12 +43,109 @@ const SilHouse = () => {
                         Get in touch with us now to opt for our exceptional SIL assistance and get started attaining independence and cheerfulness in life.
                     </p>
                     <div className="flex items-center justify-center gap-10">
-                        <Link href={"/contact-us"} className='text-white text-lg font-semibold px-9 py-3.5 rounded-full bg-primary hover:bg-secondary transition-colors duration-300 ' >Enquire Now</Link>
-                        <Link href={"/referral"} className='text-white text-lg font-semibold px-9 py-3.5 rounded-full bg-primary hover:bg-secondary transition-colors duration-300 ' >Referral</Link>
+                        <Button path={"/contact-us"} label='Enquire Now' />
+                        <Button path={"/referral"} label='Referral' />
+                    </div>
+                </div>
+                {/* page footer ends */}
+
+
+                <div className=" grid grid-cols-1 md:grid-cols-2 place-content-start py-10 ">
+                    <div className="grid place-content-start w-full gap-5">
+                        <Title title1='Convenient Ryde Home SIL, MTA, Respite –' title2='AVAILABLE NOW' />
+                        <p className="text-secondary-text text-medium text-lg">Ryde NSW 2112</p>
+                        <div className="flex items-center justify-start py-5 gap-5">
+                            <div className="flex flex-col p-4  gap-2 text-secondary-text rounded-sm items-center justify-between border  ">
+                                <Image src={icon1} alt='icon1' />
+                                <p className="text-secondary-text  font-semibold text-center">3</p>
+                            </div>
+                            <div className="flex flex-col p-4  gap-2 text-secondary-text rounded-sm items-center justify-between border  ">
+                                <Image src={icon2} alt='icon1' />
+                                <p className="text-secondary-text  font-semibold text-center">3</p>
+                            </div>
+                            <div className="flex flex-col p-4  gap-2 text-secondary-text rounded-sm items-center justify-between border  ">
+                                <Image src={icon3} alt='icon1' />
+                                <p className="text-secondary-text  font-semibold text-center">3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="grid gap-5 place-content-start w-full">
+                        <Title title1='' title2='AVAILABLE NOW' />
+                        <p className="text-secondary-text text-medium text-lg">Beautiful shared home close to Top Ryde Shopping Center and hospital.</p>
+                        <Button path='sil-sta-respite-initial-inquiry' label='sil enquiry' />
                     </div>
                 </div>
 
-                
+                <div className="flex flex-col w-full justify-center gap-4 mt-8   ">
+                    <Title title1={sil_house_details[0].title1} title2={sil_house_details[0].title2} />
+                    <p className=" flex w-full text-lg text-secondary-text font-medium  ">{sil_house_details[0].paragraph1}</p>
+                    <p className=" flex w-full text-lg text-secondary-text font-medium  ">{sil_house_details[0].paragraph2}</p>
+                    <p className=" flex w-full text-lg text-secondary-text font-medium  ">{sil_house_details[0].paragraph3}</p>
+                    <p className=" flex w-full text-lg text-secondary-text font-medium  ">{sil_house_details[0].paragraph4}</p>
+                    <p className=" flex w-full text-lg text-secondary-text font-medium  ">{sil_house_details[0].paragraph5}</p>
+                    <ul className="grid gap-2">
+                        {sil_house_details[0].bullet_points && sil_house_details[0].bullet_points.map((itm, idx) => (
+                            <li key={idx} className=" flex items-start w-full gap-2 ">
+                                <TiTick className='bg-secondary rounded-full text-4xl  h-full w-full max-h-5 max-w-5 mt-0.5 text-white ' />
+                                <p className="text-lg font-medium text-secondary-text ">{itm}</p>
+                            </li>
+                        ))}
+                        <p className="text-lg text-secondary-text font-medium my-2">{sil_house_details[0].paragraph6} </p>
+                    </ul>
+                </div>
+
+                <div className="flex w-full items-start flex-col justify-start overflow-x-auto  ">
+                    <Title title1='Property' title2='Features'/>
+                    <table className='w-full rounded my-5 '>
+                        <tbody className='w-full border-dotted border  divide-secondary-text'>
+                            {sil_house_details[1].table_contents?.map((item, index) => (
+                                <tr className='flex w-full px-3 py-2  border-dotted not-last:border-b gap-5' key={index}>
+                                    <th className='flex-1 min-w-50 max-w-50 text-left'>{item.heading}</th>
+                                    {item.options.map((itm, idx) => (
+                                        <td className='flex-1 min-w-60 font-medium max-w-60 text-left' key={idx}>{itm}</td>
+                                    ))}
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                </div>
+
+                <div className="grid w-full my-10 gap-5">
+                    <Title title1='Provider' title2='Details'/>
+                    <ul className="flex text-lg flex-wrap w-full items-center justify-between">
+                        <li className="font-semibold text-xl">The building </li>
+                        <li className="">SIL Provider:</li>
+                        <li className="">Health U Australia</li>
+                    </ul>
+                </div>
+
+                <div className="grid w-full my-10 gap-5">
+                    <Title title1='Application' title2='Criteria'/>
+                    <ul className="grid gap-2">
+                        {sil_house_details[2].bullet_points?.map((itm, idx) => (
+                            <li key={idx} className=" flex items-start w-full gap-2 ">
+                                <TiTick className='bg-secondary rounded-full text-4xl  h-full w-full max-h-5 max-w-5 mt-1 text-white ' />
+                                <p className="text-lg font-medium text-secondary-text "><strong>{itm?.keyword} </strong>{itm?.text}</p>
+                            </li>
+                        ))}
+                        {/* {item?.paragraph3 && <p className="text-lg text-secondary-text font-medium my-2">{item.paragraph3}</p>} */}
+                    </ul>
+                </div>
+
+                <div className="grid w-full my-10 gap-5">
+                    <Title title1='What’s' title2='nearby'/>
+                    <ul className="grid gap-2">
+                        {sil_house_details[3].options?.map((itm, idx) => (
+                            <li key={idx} className=" flex  items-start w-full gap-2 ">
+                                <h4 className=" min-w-40 font-bold uppercase">{itm.title}</h4>
+                                <p className="text-secondary-text  font-medium">{itm.text}</p>
+                            </li>
+                        ))}
+                        {/* {item?.paragraph3 && <p className="text-lg text-secondary-text font-medium my-2">{item.paragraph3}</p>} */}
+                    </ul>
+                </div>
+
+
             </div>
         </div>
     )
