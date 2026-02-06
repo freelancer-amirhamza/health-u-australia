@@ -45,7 +45,7 @@ export const nav_items = [
         ]
     },
     { label: "Gallery", path: "/gallery" },
-    { label: "Contact Us", path: "/contact" },
+    { label: "Contact Us", path: "/contact-us" },
     { label: "Referral", path: "/referral" },
 ]
 
