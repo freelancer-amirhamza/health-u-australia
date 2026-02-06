@@ -1,20 +1,26 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 import PageBanner from 'app/UI/PageBanner'
 import Image from 'next/image'
 import icon1 from "assets/images/2026/10/icon.png"
 import icon2 from "assets/images/2026/10/icon2.png"
 import icon3 from "assets/images/2026/10/icon4.png"
 import { TiTick } from 'react-icons/ti';
-import { sil_house, sil_house_details } from 'config/page'
+import { sil_house, sil_house_details, sil_house_gallery } from 'config/page'
 import Button from 'app/UI/Button'
 import Title from 'app/UI/Title'
+import { FaPlus } from 'react-icons/fa'
+import SlideModal from 'app/components/SlideModal'
 
 const SilHouse = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    const [currentId, setCurrentId] = useState(0);
+
     return (
         <div className="flex flex-col justify-center items-center w-full h-full ">
             <PageBanner title='SIL House' path='/sil-house' />
             <div className="container px-5 flex flex-col items-center mx-auto justify-center w-full h-full ">
-                {sil_house.map((item:any, index:number) => (
+                {sil_house.map((item: any, index: number) => (
                     <div key={index} className={`flex flex-col my-10 gap-x-0 ${[0, 2, 4].includes(index) ? 'md:flex-row-reverse' : 'md:flex-row'} justify-center items-start w-full`}>
                         <Image src={item.image} alt='about heath u australia' className='hover:scale-102 ease-in-out transition-all duration-500  w-full h-full md:object-scale-down inset-0 items-start justify-start p-0 m-0 ' />
                         <div className="flex flex-col w-full justify-center gap-2 mt-8   ">
@@ -22,7 +28,7 @@ const SilHouse = () => {
                             <p className=" flex w-full text-lg text-secondary-text font-medium  ">{item.paragraph1}</p>
                             <ul className="grid gap-2">
                                 {item?.bullet_points && <h4 className="text-xl my-3 text-secondary-text font-semibold">{item.bullet_title} </h4>}
-                                {item?.bullet_points && item?.bullet_points.map((itm:any, idx:number) => (
+                                {item?.bullet_points && item?.bullet_points.map((itm: any, idx: number) => (
                                     <li key={idx} className=" flex items-start w-full gap-2 ">
                                         <TiTick className='bg-secondary rounded-full text-4xl  h-full w-full max-h-5 max-w-5 mt-0.5 text-white ' />
                                         <p className="text-lg font-medium text-secondary-text ">{itm}</p>
@@ -83,7 +89,7 @@ const SilHouse = () => {
                     <p className=" flex w-full text-lg text-secondary-text font-medium  ">{sil_house_details[0].paragraph4}</p>
                     <p className=" flex w-full text-lg text-secondary-text font-medium  ">{sil_house_details[0].paragraph5}</p>
                     <ul className="grid gap-2">
-                        {sil_house_details[0].bullet_points && sil_house_details[0].bullet_points.map((itm:any, idx:number) => (
+                        {sil_house_details[0].bullet_points && sil_house_details[0].bullet_points.map((itm: any, idx: number) => (
                             <li key={idx} className=" flex items-start w-full gap-2 ">
                                 <TiTick className='bg-secondary rounded-full text-4xl  h-full w-full max-h-5 max-w-5 mt-0.5 text-white ' />
                                 <p className="text-lg font-medium text-secondary-text ">{itm}</p>
@@ -94,13 +100,13 @@ const SilHouse = () => {
                 </div>
 
                 <div className="flex w-full items-start flex-col justify-start overflow-x-auto  ">
-                    <Title title1='Property' title2='Features'/>
+                    <Title title1='Property' title2='Features' />
                     <table className='w-full rounded my-5 '>
                         <tbody className='w-full border-dotted border  divide-secondary-text'>
-                            {sil_house_details[1].table_contents?.map((item:any, index:number) => (
+                            {sil_house_details[1].table_contents?.map((item: any, index: number) => (
                                 <tr className='flex w-full px-3 py-2  border-dotted not-last:border-b gap-5' key={index}>
                                     <th className='flex-1 min-w-50 max-w-50 text-left'>{item.heading}</th>
-                                    {item.options.map((itm:any, idx:number) => (
+                                    {item.options.map((itm: any, idx: number) => (
                                         <td className='flex-1 min-w-60 font-medium max-w-60 text-left' key={idx}>{itm}</td>
                                     ))}
                                 </tr>
@@ -110,7 +116,7 @@ const SilHouse = () => {
                 </div>
 
                 <div className="grid w-full my-10 gap-5">
-                    <Title title1='Provider' title2='Details'/>
+                    <Title title1='Provider' title2='Details' />
                     <ul className="flex text-lg flex-wrap w-full items-center justify-between">
                         <li className="font-semibold text-xl">The building </li>
                         <li className="">SIL Provider:</li>
@@ -119,32 +125,59 @@ const SilHouse = () => {
                 </div>
 
                 <div className="grid w-full my-10 gap-5">
-                    <Title title1='Application' title2='Criteria'/>
+                    <Title title1='Application' title2='Criteria' />
                     <ul className="grid gap-2">
-                        {sil_house_details[2].bullet_points?.map((itm:any, idx:number) => (
+                        {sil_house_details[2].bullet_points?.map((itm: any, idx: number) => (
                             <li key={idx} className=" flex items-start w-full gap-2 ">
                                 <TiTick className='bg-secondary rounded-full text-4xl  h-full w-full max-h-5 max-w-5 mt-1 text-white ' />
                                 <p className="text-lg font-medium text-secondary-text "><strong>{itm?.keyword} </strong>{itm?.text}</p>
                             </li>
                         ))}
-                        {/* {item?.paragraph3 && <p className="text-lg text-secondary-text font-medium my-2">{item.paragraph3}</p>} */}
                     </ul>
                 </div>
 
                 <div className="grid w-full my-10 gap-5">
-                    <Title title1='What’s' title2='nearby'/>
+                    <Title title1='What’s' title2='nearby' />
                     <ul className="grid gap-2">
-                        {sil_house_details[3].options?.map((itm:any, idx:number) => (
+                        {sil_house_details[3].options?.map((itm: any, idx: number) => (
                             <li key={idx} className=" flex  items-start w-full gap-2 ">
                                 <h4 className=" min-w-40 font-bold uppercase">{itm.title}</h4>
                                 <p className="text-secondary-text  font-medium">{itm.text}</p>
                             </li>
                         ))}
-                        {/* {item?.paragraph3 && <p className="text-lg text-secondary-text font-medium my-2">{item.paragraph3}</p>} */}
                     </ul>
                 </div>
+                {/* sil house details contents */}
 
+                <div className="grid w-full my-10 gap-10 place-content-center">
+                    <Title title1='Our' title2='Gallery' className={`place-items-center`} />
+                    <div className="grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3  place-content-around ">
+                        {sil_house_gallery.map((item, index) => (
+                            <div key={index} onClick={() => { setIsOpen(!isOpen); setCurrentId(index) }} className="w-full h-full relative group">
+                                <Image src={item} alt='Health_U_australia' className='object-cover relative w-full h-full max-h-72 ' />
+                                <div className="absolute bg-black/70 flex items-center transition-all duration-700 justify-center hover:opacity-100 opacity-0 top-0 rounded-md cursor-pointer h-full w-full border-8 border-transparent ">
+                                    <div className="bg-black h-12 w-12 group-hover:opacity-100 opacity-0 transition-all duration-700 flex items-center justify-center rounded-full ">
+                                        <FaPlus className='bg-white p-0.5 rounded-full text-xl m-0 ' />
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+                <div className="w-full h-full flex items-center justify-center my-12 border-5 border-secondary rounded   ">
+                    <iframe
+                        className="flex h-full w-full min-h-125 rounded"
+                        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d53042.820254363636!2d151.07279133749608!3d-33.80776405171564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sHealth%20U%20Australia%20Ryde!5e0!3m2!1sen!2sbd!4v1768531763664!5m2!1sen!2sbd"
+                        width={400}
+                        height={400}
+                        style={{ border: 0 }}
+                        allowFullScreen={true}
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                    />
+                </div>
 
+                {isOpen && <SlideModal close={() => setIsOpen(false)} currentId={currentId} />}
             </div>
         </div>
     )

@@ -5,6 +5,7 @@ import { sil_property } from 'config/page'
 import Image from 'next/image'
 import { FaPlus } from 'react-icons/fa'
 import SlideModal from 'app/components/SlideModal'
+import Title from 'app/UI/Title'
 const Gallery = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [currentId, setCurrentId] = useState(0)
@@ -12,10 +13,7 @@ const Gallery = () => {
         <div className="flex flex-col justify-center items-center w-full h-full ">
             <PageBanner title='Gallery' path='/gallery' />
             <div className="container px-5 py-10 flex flex-col items-center mx-auto justify-center w-full h-full ">
-                <div className="flex w-full h-full items-center py-5 gap-3 flex-col justify-center ">
-                    <h1 className="text-3xl font-bold">SIL property – <span className="text-secondary">Bowden Street</span> </h1>
-                    <div className='w-20 h-1 bg-primary' />
-                </div>
+                <Title title1='SIL property – ' title2='Bowden Street' />
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 lg:grid-cols-4  place-content-around  w-full ">
                     {sil_property.map((img, index) => (
                         <div key={index} onClick={() => { setIsOpen(!isOpen); setCurrentId(index) }} className="relative h-full w-full group ">
@@ -25,7 +23,6 @@ const Gallery = () => {
                                     <FaPlus className='bg-white p-0.5 rounded-full text-xl m-0 ' />
                                 </div>
                             </div>
-
                         </div>
                     ))}
                 </div>

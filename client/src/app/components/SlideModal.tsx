@@ -1,3 +1,4 @@
+"use client"
 import { sil_property } from 'config/page'
 import Image from 'next/image'
 import React, { useEffect, useRef, useState } from 'react'
@@ -20,12 +21,12 @@ const SlideModal: React.FC<Type> = ({ close, currentId }) => {
     const prevRef = useRef<any>(null);
     const nextRef = useRef<any>(null);
     const swiperRef = useRef<any>(null);
-    const [mounted, setMounted] = useState(false);
+    // const [mounted, setMounted] = useState(false);
     const [activeIndex, setActiveIndex] = useState<number>(currentId ?? 0);
 
-    useEffect(() => {
-        setMounted(true);
-    }, []);
+    // useEffect(() => {
+    //     setMounted(true);
+    // }, []);
 
     useEffect(() => {
         setActiveIndex(currentId ?? 0);

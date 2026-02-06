@@ -6,7 +6,13 @@ import {
     property_img09, property_img10, property_img11, property_img12, property_img13, property_img14,
     property_img15, property_img16, property_img17, property_img18, property_img19, property_img20, property_img21,
     property_img22, property_img08, service1, service2, service3, service4, service5, service6, service7, service8,
-    sil_image1, sil_image2, sil_image3, sil_image4, support1, support2, support3
+    sil_image1, sil_image2, sil_image3, sil_image4, support1, support2, support3,
+    gallery_img01,
+    gallery_img02,
+    gallery_img03,
+    gallery_img04,
+    gallery_img05,
+    gallery_img06
 } from "assets"
 
 
@@ -165,21 +171,7 @@ export const sil_house = [
     },
 ]
 
-// export interface SilHouseDetail {
-//     title1?: string;
-//     title2?: string;
-//     paragraph1?: string;
-//     paragraph2?: string;
-//     paragraph3?: string;
-//     paragraph4?: string;
-//     paragraph5?: string;
-//     paragraph6?: string;
-//     bullet_title?: string;
-//     bullet_points?: Array<any>;
-//     table_contents?: Array<any>;
-//     options?: Array<any>;
-// }
-
+export const sil_house_gallery = [gallery_img01,gallery_img02,gallery_img03,gallery_img04,gallery_img05,gallery_img06]
 export const sil_house_details = [
     {
         title1: "STA/Respite",
