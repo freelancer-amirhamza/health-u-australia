@@ -13,7 +13,7 @@ const Gallery = () => {
         <div className="flex flex-col justify-center items-center w-full h-full ">
             <PageBanner title='Gallery' path='/gallery' />
             <div className="container px-5 py-10 flex flex-col items-center mx-auto justify-center w-full h-full ">
-                <Title title1='SIL property – ' title2='Bowden Street' />
+                <Title title1='SIL property – ' title2='Bowden Street' className={`place-content-center place-items-center `} />
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 lg:grid-cols-4  place-content-around  w-full ">
                     {sil_property.map((img, index) => (
                         <div key={index} onClick={() => { setIsOpen(!isOpen); setCurrentId(index) }} className="relative h-full w-full group ">

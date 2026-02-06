@@ -468,3 +468,30 @@ export const sil_property = [property_img01, property_img02, property_img03, pro
     property_img08, property_img09, property_img10, property_img11, property_img12, property_img13, property_img14,
     property_img15, property_img16, property_img17, property_img18, property_img19, property_img20, property_img21,
     property_img22,]
+
+export const contact_details = [
+    {   title1:"Top Ryde",
+        title2:"Office:",
+        phone:"0481 707 758 / 0431 377 132",
+        email:"info@healthuau.com",
+        address:"Top Ryde City Shopping Centre Shop MM20, Level 2, 109-129 Blaxland Road, Ryde NSW 2112",
+        time:"8:00 am – 6:00 pm",
+    },
+    {
+        title1:"Ryde",
+        title2:"Office:",
+        phone:"0480 045 558",
+        email:"info@healthuau.com",
+        address:"92 Bowden Street, Ryde, NSW 2112",
+        time:"8:00 am – 6:00 pm",
+    },
+    {
+        title1:"Normanhurst",
+        title2:"Office:",
+        phone:"0435 680 807",
+        email:"info@healthuau.com",
+        address:"102 Denman Parade, Normanhurst NSW 2076",
+        time:"8:00 am – 6:00 pm",
+    },
+
+]
