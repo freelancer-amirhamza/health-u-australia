@@ -165,6 +165,21 @@ export const sil_house = [
     },
 ]
 
+// export interface SilHouseDetail {
+//     title1?: string;
+//     title2?: string;
+//     paragraph1?: string;
+//     paragraph2?: string;
+//     paragraph3?: string;
+//     paragraph4?: string;
+//     paragraph5?: string;
+//     paragraph6?: string;
+//     bullet_title?: string;
+//     bullet_points?: Array<any>;
+//     table_contents?: Array<any>;
+//     options?: Array<any>;
+// }
+
 export const sil_house_details = [
     {
         title1: "STA/Respite",
@@ -222,21 +237,21 @@ export const sil_house_details = [
     {
         bullet_points: [
             { keyword: "Flexible Support Levels:", text: " We cater to a wide range of support needs, from minimal to complex. Our team will work with you to create a customised care plan based on your individual goals and preferences." },
-            { keyword: "Inclusive Environment: ", text:"We welcome people of all ages, backgrounds, and abilities. Whether you require short-term, long-term, or respite care, we can accommodate your needs." },
+            { keyword: "Inclusive Environment: ", text: "We welcome people of all ages, backgrounds, and abilities. Whether you require short-term, long-term, or respite care, we can accommodate your needs." },
             { keyword: "Easy Application Process:", text: "We’ve simplified our process to make it easier for you. Simply reach out with your inquiry, and our friendly team will guide you through the next steps, including any paperwork and assessments." },
-            { keyword:"Trial Stays Available: ", text: "Not sure if it’s the right fit? We offer trial stays so you can experience the accommodation and support services before making a decision." },
+            { keyword: "Trial Stays Available: ", text: "Not sure if it’s the right fit? We offer trial stays so you can experience the accommodation and support services before making a decision." },
         ]
     },
     {
-        options:[
+        options: [
             {
-                title:"Local terrain", text:"Meadowbank wharf, Green Spaces and Parks, Proximity to Parramatta River"
+                title: "Local terrain", text: "Meadowbank wharf, Green Spaces and Parks, Proximity to Parramatta River"
             },
             {
-                title:"Transport", text:"Bus at your doorstep to Top Ryde and Macquarie"
+                title: "Transport", text: "Bus at your doorstep to Top Ryde and Macquarie"
             },
             {
-                title:"Shopping", text:"Top Ryde City Shopping Centre, Macquarie Centre, Rhodes Waterside Shopping Centre"
+                title: "Shopping", text: "Top Ryde City Shopping Centre, Macquarie Centre, Rhodes Waterside Shopping Centre"
             },
         ]
     }
