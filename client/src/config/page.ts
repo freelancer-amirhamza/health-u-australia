@@ -99,7 +99,6 @@ export const service_items = [
 
 ]
 
-
 export const google_reviews = [
     {
         image: aryan,
@@ -177,7 +176,9 @@ export const sil_house = [
     },
 ]
 
-export const sil_house_gallery = [gallery_img01,gallery_img02,gallery_img03,gallery_img04,gallery_img05,gallery_img06]
+export const sil_house_gallery = [gallery_img01,gallery_img02,gallery_img03,gallery_img04,gallery_img05,gallery_img06];
+
+
 export const sil_house_details = [
     {
         title1: "STA/Respite",
@@ -551,7 +552,7 @@ export const gardening_house_yard = [
         paragraph1: "Health U Support Services is known for its Gardening/House and yard maintenance service since:",
         paragraph2: "Contact us if you have more queries about any of these services.",
         bullet_points: [
-            {  text: "We strive to maintain hygiene and cleanliness of our participants’ homes with attention to detail" },
+            { text: "We strive to maintain hygiene and cleanliness of our participants’ homes with attention to detail" },
             { text: "We improve the appearance of lawns by trimming the grasses and removing the debris" },
             { text: "We consider participants’ requirements to provide the desired results" },
             { text: "While providing home maintenance services, we ensure the safety of participants and avoid structural modifications" },

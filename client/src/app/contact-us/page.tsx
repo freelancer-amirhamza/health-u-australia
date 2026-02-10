@@ -59,8 +59,8 @@ const Contact = () => {
                     </div>
                 ))}
             </div>
-            <div className="flex flex-col md:flex-row items-center justify-center w-full my-12 gap-10 ">
-                <div className="grid gap-5 w-full rounded border border-neutral-400 p-5">
+            <div className="flex flex-col md:flex-row items-center justify-center w-full shadow py-12 gap-10 ">
+                <div className="grid gap-5 w-full rounded border shadow border-neutral-400 p-5">
                     <Title title1='Get In Touch' title2='With Us'/>
                     <form className="grid gap-5 ">
                         <input
@@ -84,7 +84,7 @@ const Contact = () => {
                         <Button path='' label='Submit Now'  />
                     </form>
                 </div>
-                <div className="grid gap-5 w-full rounded border border-neutral-400 p-5">
+                <div className="grid gap-5 w-full rounded border border-neutral-400 shadow p-5">
                     <Title title1='Apply For' title2='a Position'/>
                     <form className="grid gap-5 ">
                         <input
@@ -114,7 +114,7 @@ const Contact = () => {
                             </div>
 
                         </div>
-                        <Button path='' label='Submit Now'  />
+                        <Button path='' label='Apply Now'  />
                     </form>
                 </div>
             </div>

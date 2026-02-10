@@ -20,7 +20,7 @@ const Header = () => {
 
   return (
     <header className='w-full flex items-center justify-center sticky bg-white top-0 z-50 '>
-      <div className="container flex w-full items-center relative justify-between px-3 sm:px-0  ">
+      <div className=" flex w-full items-center relative justify-between md:px-10  sm:px-5 px-2.5  ">
         <Link href="/" className="max-h-full ">
             <Image src={logo} alt='Health U logo' className='h-24 w-44'  />
         </Link>

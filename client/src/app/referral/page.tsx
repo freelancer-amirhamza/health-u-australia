@@ -9,6 +9,7 @@ const Referral = () => {
     <div className="flex flex-col items-center justify-between w-full">
         <PageBanner title='Referral' path='referral'/>
         <div className="container mx-auto flex flex-col my-10 items-center justify-center w-full">
+            <form  >
             <div className="grid  border border-neutral-300 px-10 py-5 rounded-md place-content-start my-10 w-full max-w-3xl">
                 <Title title1='Ready To' title2='Get Started?' />
                 <div className="grid gap-4 text-xl text-secondary-text">
@@ -19,7 +20,7 @@ const Referral = () => {
                     </select>
                 </div>
             </div>
-        </div>
+
 
             <div className="grid  border border-neutral-300 px-10 py-5 rounded-md  my-10 w-full max-w-3xl">
                 <Title title1='Participant' title2='Details' />
@@ -246,12 +247,11 @@ const Referral = () => {
                         <input type='file' name="ndis_document" id="ndis_document"
                         className=' px-4 py-3 border-neutral-400 focus-within:outline-secondary border rounded cursor-pointer   min-w-full ' />
                     </div>
-
-
-
                 </div>
             </div>
             {/* participant details */}
+            </form>
+    </div>
     </div>
   )
 }
