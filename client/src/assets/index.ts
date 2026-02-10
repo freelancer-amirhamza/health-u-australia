@@ -75,6 +75,10 @@ import gallery_img04 from "assets/images/2026/10/gallery-img04.jpg"
 import gallery_img05 from "assets/images/2026/10/gallery-img05.jpg"
 import gallery_img06 from "assets/images/2026/10/gallery-img06.jpg"
 import home_modification_img01 from "assets/images/2026/10/home-modification-img01.jpg"
+import gardening_house_yard_img01 from "assets/images/2026/09/home-repair-yard-maintenance-img01.jpg"
+import gardening_house_yard_img02 from "assets/images/2026/10/gardening-house-and-yard-maintenance-img.jpg"
+import gardening_house_yard_img03 from "assets/images/2026/09/home-repair-yard-maintenance-img03.jpg"
+import gardening_house_yard_img04 from "assets/images/2026/09/home-repair-yard-maintenance-img04.jpg"
 export {
     service1, service2, service3, service4,service5,service6,service7,service8,aryan, brain, evelyn,jose,
     email_icon,clack_icon,call_icon,sil_image1,sil_image2,sil_image3,sil_image4,community_participation1,
@@ -86,5 +90,6 @@ export {
     property_img08,property_img09,property_img10,property_img11,property_img12,property_img13,property_img14,
     property_img15,property_img16,property_img17,property_img18,property_img19,property_img20,property_img21,
     property_img22,gallery_img01,gallery_img02,gallery_img03,gallery_img04,gallery_img05,gallery_img06,
-    home_modification_img01,
+    home_modification_img01,gardening_house_yard_img01,gardening_house_yard_img02,gardening_house_yard_img03,
+    gardening_house_yard_img04,
 }

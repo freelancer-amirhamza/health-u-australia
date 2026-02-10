@@ -9,10 +9,10 @@ import { TiTick } from 'react-icons/ti';
 import Link from 'next/link';
 import { home_modification, sil_house } from 'config/page'
 
-const SilHouse = () => {
+const HomeModification = () => {
     return (
         <div className="flex flex-col justify-center items-center w-full h-full ">
-            <PageBanner title='SIL House' path='/sil-house' />
+            <PageBanner title='Home Modification' path='/home-modification' />
             <div className="container px-5 flex flex-col items-center mx-auto justify-center w-full h-full ">
                 {home_modification.map((item, index) => (
                     <div key={index} className={`flex flex-col gap-x-0 ${[0, 2, 4].includes(index) ? 'md:flex-row-reverse' : 'md:flex-row'} justify-center items-start w-full`}>
@@ -45,4 +45,4 @@ const SilHouse = () => {
     )
 }
 
-export default SilHouse
+export default HomeModification

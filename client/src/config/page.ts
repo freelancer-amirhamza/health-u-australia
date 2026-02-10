@@ -14,7 +14,11 @@ import {
     gallery_img04,
     gallery_img05,
     gallery_img06,
-    home_modification_img01
+    home_modification_img01,
+    gardening_house_yard_img01,
+    gardening_house_yard_img02,
+    gardening_house_yard_img03,
+    gardening_house_yard_img04
 } from "assets"
 
 
@@ -32,8 +36,8 @@ export const nav_items = [
             { label: "Support Coordination", path: "/support-coordination" },
             { label: "Assist In Self-care", path: "/assist-in-self-care" },
             { label: "Assist In Transport", path: "/assist-in-transport" },
-            { label: "Home Modification", path: "/home-modification" },
-            { label: "Non NDIS Free Service", path: "/non-ndis" },
+            { label: "Home Modification", path: "/home-modification"},
+            { label: "Non NDIS Free Service", path: "/compassion-in-action" },
             { label: "Gardening/House And Yard", path: "/gardening-house-yard" },
         ]
     },
@@ -508,6 +512,49 @@ export const home_modification = [
             { keyword: "", text: "Installing equipment or changing a building’s structure, fixture or fittings" },
             { keyword: "", text: "Internal and external building modifications to remedy damage arising exclusively from disability-related behaviors or use of NDIS funded assistive technology or equipment" },
             { keyword: "", text: "regulatory certification requirements for works." },
+        ]
+    },
+]
+
+export const gardening_house_yard = [
+    {
+        image: gardening_house_yard_img01,
+        title1: "Gardening/House and Yard Maintenance Assistance",
+        title2: "by Health U Support Services",
+        paragraph1: "Keeping your place in the right condition is crucial to health and safety. In fact, a well-maintained home and yard can also help improve your well-being. However, since achieving this feat all by yourself can be challenging, you should get in touch with Health U Support Services. Since we have years of experience in working with participants with varying needs, you can rely on us. Our staff will inspect your home to determine the surfaces that require maintenance.",
+        paragraph2: "Apart from house assistance, we also assist participants in maintaining their yards. Our professionals will trim the grass and remove the waste to make the yard appear enticing. Thus, now that you have the right professionals by your side, get in touch with us if you want to learn more about any of these services.",
+    },
+    {
+        image: gardening_house_yard_img02,
+        title1: "Plan wise",
+        title2: "Gardening/House",
+        paragraph1: "You home needs to be in the best shape if you want to live safely and comfortably and garden is an integral part of your home. Our vetted staff are skilled in effective garden maintenance and ease your woes from dealing with the chores. Besides taking care of yards or garden, we also pay attention to cleaning shabby ceilings, walls of your kitchen or bathroom. Regular maintenance can help you enhance the functionality and accessibility of your home.",
+    },
+    {
+        image: gardening_house_yard_img03,
+        title1: "Comprehensive Yard ",
+        title2: "Maintenance",
+        paragraph1: "At Health U Support Services, we are committed to transforming yards using the appropriate tools and techniques.",
+        paragraph3: "Our staff will use your tools. However, if required, they will arrange tools to redefine your yard.",
+        bullet_title: "Our professionals will:",
+        bullet_points: [
+            { text: "Trim the grasses" },
+            { text: "Remove debris " },
+            { text: "Treat weeds and pests" },
+            { text: "Fertilise the plants in and around your yard" },
+        ]
+    },
+    {
+        image: gardening_house_yard_img04,
+        title1: "Why Our Gardening/House and Yard Maintenance",
+        title2: "Service is Preferred?",
+        paragraph1: "Health U Support Services is known for its Gardening/House and yard maintenance service since:",
+        paragraph2: "Contact us if you have more queries about any of these services.",
+        bullet_points: [
+            {  text: "We strive to maintain hygiene and cleanliness of our participants’ homes with attention to detail" },
+            { text: "We improve the appearance of lawns by trimming the grasses and removing the debris" },
+            { text: "We consider participants’ requirements to provide the desired results" },
+            { text: "While providing home maintenance services, we ensure the safety of participants and avoid structural modifications" },
         ]
     },
 ]
