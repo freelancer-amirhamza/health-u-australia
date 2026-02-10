@@ -1,3 +1,4 @@
+
 import {
     aryan, assist_self1, assist_self2, assist_self3, assist_transport1, assist_transport2, assist_transport3,
     assist_transport4, assist_transport5, brain, capacity1, capacity2, capacity3, community_participation1,
@@ -12,7 +13,8 @@ import {
     gallery_img03,
     gallery_img04,
     gallery_img05,
-    gallery_img06
+    gallery_img06,
+    home_modification_img01
 } from "assets"
 
 
@@ -494,4 +496,18 @@ export const contact_details = [
         time:"8:00 am – 6:00 pm",
     },
 
+]
+
+export const home_modification = [
+    {
+        image: home_modification_img01,
+        title1: "Home modification",
+        title2: "design and construction",
+        paragraph1: "Supports that design, change or modify a participant’s home to help the participant live as independently as possible and to live safely at home. This includes:",
+        bullet_points: [
+            { keyword: "", text: "Installing equipment or changing a building’s structure, fixture or fittings" },
+            { keyword: "", text: "Internal and external building modifications to remedy damage arising exclusively from disability-related behaviors or use of NDIS funded assistive technology or equipment" },
+            { keyword: "", text: "regulatory certification requirements for works." },
+        ]
+    },
 ]
