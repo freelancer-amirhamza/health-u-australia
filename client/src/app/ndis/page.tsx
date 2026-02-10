@@ -17,7 +17,7 @@ const NDIS = () => {
         <div className=" flex flex-col  gap-x-0 md:flex-row-reverse justify-center items-start my-10 w-full   ">
           <Image src={ndis1} alt='about heath u australia' className='hover:scale-102 ease-in-out transition-all duration-500  w-full h-full md:object-scale-down inset-0 items-start justify-start p-0 m-0 ' />
           <div className="flex flex-col w-full justify-center gap-2 mt-10   ">
-            <h1 className="text-[27px] font-bold  ">Health U Support Services – <span className="text-secondary">The NDIS Partner to Rely On</span></h1>
+            <h1 className="text-[32px] font-bold  ">Health U Support Services – <span className="text-secondary">The NDIS Partner to Rely On</span></h1>
             <div className='w-14 h-0.75 bg-primary items-center  ' />
             <p className=" flex w-full text-lg text-secondary-text font-medium  ">
               At Health U Support Services, we aim to empower individuals with specific needs by providing a wide range of support services through the National Disability Insurance Scheme (NDIS) optimised to their requirements. So, if you are a participant, with our assistance, you can experience the improvement of your quality of life. Our support staff will guide you in navigating NDIS and achieving independence.
@@ -28,7 +28,7 @@ const NDIS = () => {
         <div className=" flex flex-col  gap-x-0 md:flex-row justify-center items-start  w-full   ">
           <Image src={ndis2} alt='about heath u australia' className='hover:scale-102 ease-in-out transition-all duration-500  w-full h-full md:object-scale-down inset-0 items-start justify-start p-0 m-0 ' />
           <div className="flex flex-col w-full justify-center gap-2 mt-8   ">
-            <h1 className="text-[27px] font-bold  ">What is NDIS, and <span className="text-secondary">Who is Eligible?</span></h1>
+            <h1 className="text-[32px] font-bold  ">What is NDIS, and <span className="text-secondary">Who is Eligible?</span></h1>
             <div className='w-14 h-0.75 bg-primary items-center  ' />
             <p className=" flex w-full text-lg text-secondary-text font-medium  ">
               The National Disability Insurance Scheme (NDIS) is a government initiative that provides funding and support to Australians with permanent disabilities.
@@ -59,7 +59,7 @@ const NDIS = () => {
         <div className=" flex flex-col  gap-x-0 md:flex-row-reverse justify-center items-start  w-full   ">
           <Image src={ndis3} alt='about heath u australia' className='hover:scale-102 ease-in-out transition-all duration-500  w-full h-full md:object-scale-down inset-0 items-start justify-start p-0 m-0 ' />
           <div className="flex flex-col w-full justify-center gap-2 mt-8   ">
-            <h1 className="text-[27px] font-bold  ">Application Support –<span className="text-secondary">At No Cost to You</span></h1>
+            <h1 className="text-[32px] font-bold  ">Application Support –<span className="text-secondary">At No Cost to You</span></h1>
             <div className='w-14 h-0.75 bg-primary items-center  ' />
             <p className=" flex w-full text-lg text-secondary-text font-medium  ">
               Navigating the NDIS application process can be overwhelming, but we are here to simplify it. We will assist you with the process to ensure that you are able to secure your funding. Our experienced team will guide you every step of the way and even handle the paperwork for the application procedure.
@@ -93,7 +93,7 @@ const NDIS = () => {
         <div className=" flex flex-col  gap-x-0 md:flex-row justify-center items-start  w-full   ">
           <Image src={ndis4} alt='about heath u australia' className='hover:scale-102 ease-in-out transition-all duration-500  w-full h-full md:object-scale-down inset-0 items-start justify-start p-0 m-0 ' />
           <div className="flex flex-col w-full justify-center gap-2 mt-8   ">
-            <h1 className="text-[27px] font-bold  ">Funded Supports<span className="text-secondary">for You</span></h1>
+            <h1 className="text-[32px] font-bold  ">Funded Supports<span className="text-secondary">for You</span></h1>
             <div className='w-14 h-0.75 bg-primary items-center  ' />
             <p className=" flex w-full text-lg text-secondary-text font-medium  ">
              After your NDIS funding is approved, at Health U Support Services, we will offer the support that you need to achieve your goals.

@@ -12,7 +12,7 @@ const Contact = () => {
   return (
     <div className="grid w-full h-full">
         <PageBanner title='Contact Us' path='/contact-us'/>
-        <div className="  flex flex-col  w-full h-full mx-auto my-12 ">
+        <div className="flex flex-col  w-full h-full mx-auto my-12 ">
             <div className="flex px-10  flex-wrap items-center justify-center w-full gap-5 my-12 h-full">
                 {contact_details.map((item, index)=>(
                     <div key={index} className="flex w-full max-w-100 border-[0.5px] border-neutral-300 rounded-md min-h-136 items-start  shadow-2xl">

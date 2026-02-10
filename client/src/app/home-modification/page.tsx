@@ -8,6 +8,7 @@ import ndis4 from "assets/images/about/ndis-img04.jpg"
 import { TiTick } from 'react-icons/ti';
 import Link from 'next/link';
 import { home_modification, sil_house } from 'config/page'
+import Title from 'app/UI/Title'
 
 const HomeModification = () => {
     return (
@@ -18,8 +19,7 @@ const HomeModification = () => {
                     <div key={index} className={`flex flex-col gap-x-0 ${[0, 2, 4].includes(index) ? 'md:flex-row-reverse' : 'md:flex-row'} justify-center items-start w-full`}>
                         <Image src={item.image} alt='about heath u australia' className='hover:scale-102 ease-in-out transition-all duration-500  w-full h-full md:object-scale-down inset-0 items-start justify-start p-0 m-0 ' />
                         <div className="flex flex-col w-full justify-center gap-2 mt-8   ">
-                            <h1 className="text-[27px] font-bold  ">{item.title1} <span className="text-secondary">{item.title2}</span></h1>
-                            <div className='w-14 h-0.75 bg-primary items-center  ' />
+                            <Title title1={item.title1} title2={item.title2} />
                             <p className=" flex w-full text-lg text-secondary-text font-medium  ">{item.paragraph1}</p>
                             <ul className="grid gap-2">
                                 {item?.bullet_points && item?.bullet_points.map((itm:any, idx:number) => (
@@ -32,7 +32,6 @@ const HomeModification = () => {
                         </div>
                     </div>
                 ))}
-
                 <div className="flex flex-col w-full justify-center gap-4 h-full items-center bg-gray-100 p-10    ">
                     <div className='w-14 h-0.75 bg-primary items-center  ' />
                     <div className="flex items-center justify-center gap-10">

@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { TiTick } from 'react-icons/ti';
 import Link from 'next/link';
 import {  assist_in_self_care, support_coordination,  } from 'config/page'
+import Title from 'app/UI/Title';
 
 const AssistInSelf = () => {
     return (
@@ -14,8 +15,7 @@ const AssistInSelf = () => {
                     <div key={index} className={`flex flex-col gap-x-0 ${[0, 2, 4].includes(index) ? 'md:flex-row-reverse' : 'md:flex-row'} justify-center items-start w-full`}>
                         <Image src={item.image} alt='about heath u australia' className='hover:scale-102 ease-in-out transition-all duration-500  w-full h-full md:object-scale-down inset-0 items-start justify-start p-0 m-0 ' />
                         <div className="flex flex-col w-full justify-center gap-2 mt-8   ">
-                            <h1 className="text-[27px] font-bold  ">{item.title1} <span className="text-secondary">{item.title2}</span></h1>
-                            <div className='w-14 h-0.75 bg-primary items-center  ' />
+                            <Title title1={item.title1} title2={item.title2} />
                             <p className=" flex w-full text-lg text-secondary-text font-medium  ">{item?.paragraph1}</p>
                             <ul className="grid gap-2">
                                 {item?.bullet_title && <h4 className="text-xl my-3 text-secondary-text font-semibold">{item?.bullet_title} </h4>}
@@ -25,9 +25,7 @@ const AssistInSelf = () => {
                                         <p className="text-lg font-medium text-secondary-text "><strong>{itm?.keyword} </strong>{itm?.text}</p>
                                     </li>
                                 ))}
-                                                            {/* <h1 className="text-[27px] font-bold  ">{item?.title3} <span className="text-secondary">{item?.title4}</span></h1> */}
                                 <p className="text-lg text-secondary-text font-medium my-2">{item?.paragraph2} </p>
-                                {/* {item?.paragraph3 && <p className="text-lg text-secondary-text font-medium my-2">{item.paragraph3}</p>} */}
                             </ul>
                         </div>
                     </div>
