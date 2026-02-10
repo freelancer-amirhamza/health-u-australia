@@ -12,8 +12,8 @@ const Contact = () => {
   return (
     <div className="grid w-full h-full">
         <PageBanner title='Contact Us' path='/contact-us'/>
-        <div className="container flex flex-col  w-full h-full mx-auto my-12 ">
-            <div className="flex flex-wrap items-center justify-center w-full gap-5 my-12 h-full">
+        <div className="  flex flex-col  w-full h-full mx-auto my-12 ">
+            <div className="flex px-10  flex-wrap items-center justify-center w-full gap-5 my-12 h-full">
                 {contact_details.map((item, index)=>(
                     <div key={index} className="flex w-full max-w-100 border-[0.5px] border-neutral-300 rounded-md min-h-136 items-start  shadow-2xl">
                         <ul>
@@ -54,12 +54,11 @@ const Contact = () => {
                                     <span className=' text-secondary-text font-semibold '>{item.time}</span>
                                 </div>
                             </li>
-
                         </ul>
                     </div>
                 ))}
             </div>
-            <div className="flex flex-col md:flex-row items-center justify-center w-full shadow py-12 gap-10 ">
+            <div className="flex container mx-auto px-0 flex-col md:flex-row items-center justify-center w-full shadow py-12 gap-10 ">
                 <div className="grid gap-5 w-full rounded border shadow border-neutral-400 p-5">
                     <Title title1='Get In Touch' title2='With Us'/>
                     <form className="grid gap-5 ">

@@ -23,12 +23,14 @@
 .container {
   width: 100%;
   padding: 15px;
+  margin: 0 auto;
 }
 
 /* For tablets and medium screens */
 @media (min-width: 768px) {
   .container {
     padding: 40px;
+    margin: 0 auto;
   }
 }
 
@@ -36,6 +38,7 @@
 @media (min-width: 1200px) {
   .container {
     padding: 80px;
+    margin: 0 auto;
   }
 }
 
