@@ -63,9 +63,6 @@ const Referral = () => {
                         <input type='text' name="area_suburb" id="date_of_birth"
                         className=' px-4 py-3 border-neutral-400 focus-within:outline-secondary border rounded  min-w-full ' />
                     </div>
-
-
-
                 </div>
             </div>
             {/* participant details ends */}
@@ -81,10 +78,10 @@ const Referral = () => {
 
                     <div className="grid gap-2 text-xl text-secondary-text w-full  ">
                         <label className="font-medium">Does The Participant Require An Interpreter?</label>
-                        <select name="gender" id="gender" className="px-4 py-3 border-neutral-400 focus-within:outline-secondary border rounded  min-w-full ">
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                            <option value="prefer not to say">Prefer not to say </option>
+                        <select name="cultural_langues" id="cultural_langues" className="px-4 py-3 border-neutral-400 focus-within:outline-secondary border rounded  min-w-full ">
+                            <option value="">Please Select</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
                     <div className="grid gap-2 text-xl text-secondary-text w-full  ">
@@ -94,10 +91,10 @@ const Referral = () => {
                     </div>
                     <div className="grid gap-2 text-xl text-secondary-text w-full  ">
                         <label className="font-medium">Does The Listed Participant Identify As An Aboriginal Or Torres Strait Islander?</label>
-                        <select name="gender" id="gender" className="px-4 py-3 border-neutral-400 focus-within:outline-secondary border rounded  min-w-full ">
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                            <option value="prefer not to say">Prefer not to say </option>
+                        <select name="cultural_require" id="cultural_require" className="px-4 py-3 border-neutral-400 focus-within:outline-secondary border rounded  min-w-full ">
+                            <option value="">Please Select</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
 

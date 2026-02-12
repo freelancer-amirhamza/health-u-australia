@@ -130,6 +130,36 @@ export const google_reviews = [
     },
 ];
 
+export const about = [
+    {
+        image: sil_image1,
+        title1: "Health U Support Services",
+        title2: "– We Empower Souls",
+        paragraph1: "We at Health U Support Services, are more than just NDIS service providers. We extend support to participants, assisting them to lead the life of their choice and also aim to enrich their lives by empowering them with certain abilities that help them live with autonomy. We pride ourselves on helping individuals with impairments with a wide range of support services that precisely meet their diverse needs. The supports we offer include community participation, assistance in self-care, assistance in transport, domestic assistance/cleaning, capacity building, support coordination, and home repair/yard maintenance. With such wide-ranging support services, we ought to be a one-stop solution for NDIS participants.",
+    },
+    {
+        image: sil_image2,
+        title1: "Our Support Workers Are",
+        title2: "Unique In Approach",
+        paragraph1: "Our support workers always consider NDIS participants as their extended family members. Thus, they support not just with professionalism but with care, compassion and affection. They will consider the lifestyle of participants, the goals of their lives and even their cultural, religious and social backgrounds. This focused and individualized approach helps us to frame support plans that contribute towards independent living. Our support staff talk to the families of participants and their immediate caregivers and also believe in holistic empowerment.",
+    },
+    {
+        image: sil_image3,
+        title1: "Our Mission",
+        title2: "Statement",
+        paragraph1: "Ever since we started our endeavour, our mission has been to ensure that NDIS participants have access to all the support services they need to live the life they deserve. Thus, we strive to extend quality service that not only makes lives easier for participants but also helps them meet their goals.",
+    },
+    {
+        image: sil_image4,
+        title1: "Our Support Workers Are",
+        title2: "Unique In Approach",
+        bullet_points: [
+            { keyword: "Respect:", text: " We respect the feedback we receive from participants and their families and use it to improve our service. We also respect the privacy of participants." },
+            { keyword: "Diversity: ", text: "Our service participants come from various cultural, ethnic, social, and religious backgrounds, making it diverse in character." },
+            { keyword: "Transparency:", text: "We are always upfront about how we work, the costs and the steps we take to maintain transparency." },
+        ]
+    },
+]
 
 export const sil_house = [
     {
