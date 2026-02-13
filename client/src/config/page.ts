@@ -128,6 +128,41 @@ export const google_reviews = [
         rates: 5,
         paragraph: "My experience with Health U Australia, a company that provides NDIS disability support services, has been truly impressive. The staff are knowledgeable and genuinely caring, ensuring that all services are tailored to meet individual needs effectively. They offer a broad range of support, from daily living assistance to more specialized care, all handled with great competence and compassion. It’s clear that they prioritize the well-being and empowerment of their clients, making them a reliable choice for anyone looking for quality disability support services."
     },
+    {
+
+        name: "Christian Summerhayes",
+        date: "6 months ago",
+        rates: 5,
+        paragraph: "Mina, an Outstandingly Good Excellence Care Worker is a very hard worker, she is thoroughly Professional and courteous and understanding towards the client's needs. She is thoughtful and kind and compassionate and caring. She goes out of her way to meet and Excel the Standards of the KPIs of Health U Australia. She deserves recognition and praise. She is a solidly a Good person who aspires to always do her best. She make me feel at ease and has a good sense of humor. She makes me smile better and make me feel motivated to do pleasant task activity in the community. Her brilliant attitude towards strong positivity and meticulous attention to being sensitive to my needs makes her a person focused on individual Excellence and High Standards of Individual Support Delivery. Her magnificent value is a treasure for Health U Australia. Audrey has chosen a Fantastic employee to be on the Dynamically Talented Health U Australia Team. By Christian Summerhayes BA Hons1 MAHRI Client of Health U Australia."
+    },
+    {
+
+        name: "rebecca CHAN",
+        date: "a year ago",
+        rates: 5,
+        paragraph: " A friend is a client of Health U services and they have been extremely helpful and supportive by providing vital care for their clients. The workers are always super friendly and cheerful, my friend always talk about how she enjoys interacting with Health U staffs. Great work !"
+    },
+    {
+
+        name: "Kitty Cat",
+        date: "a year ago",
+        rates: 5,
+        paragraph: "I had my first cooking class today at Health U in Ryde and it was so much fun! The staff were lovely and I made new friends. We made delicious dumplings with dipping sauce and I ate too many because they were so good! I can’t wait for next weeks class. "
+    },
+    {
+
+        name: "Lyn Bohum",
+        date: "a year ago",
+        rates: 5,
+        paragraph: "A great informative session. Learnt new strategies re decuttering. Thank you  "
+    },
+    {
+
+        name: "Julia Stone",
+        date: "a year ago",
+        rates: 5,
+        paragraph: "I find Health U and the support team are extremely helpful to me when I am in need of a service. You have protected me from harm and for that I thank you and this fills me with hope.  "
+    },
 ];
 
 export const about = [

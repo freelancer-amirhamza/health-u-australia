@@ -8,7 +8,6 @@ import 'swiper/css';
 import { Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 import Link from 'next/link';
 import StarRating from 'app/common/start-rating';
 import google_icon from "assets/Google icon.png"
@@ -20,6 +19,8 @@ const Testimonials = () => {
     const nextRef = useRef<any>(null);
     const [mounted, setMounted] = useState(false);
     const [rating, setRating] = useState(5);
+    const [active, setActive] = useState(false)
+    const [currentId,setCurrentId] = useState<number>()
 
     useEffect(() => {
         setMounted(true);
@@ -78,23 +79,26 @@ const Testimonials = () => {
                             spaceBetween: 20,
                         },
                     }}>
-                    {google_reviews.map((item, index) => (
+                    {google_reviews.map((item:any, index:number) => (
                         <SwiperSlide key={index}>
                             <div className="flex flex-col   w-full p-5 gap-5  items-start justify-start  rounded-2xl relative shadow-2xl
                                             bg-white ">
                                 <div className="flex w-full items-start justify-between gap-1  ">
-                                    <Image src={item.image} alt={item.name}
+                                    {item?.image ? <Image src={item?.image} alt={item.name}
                                         className=' flex w-full h-full max-h-14 max-w-14 object-cover ' />
+                                        : <h2 className="uppercase text-4xl text-white font-bold border border-secondary text-center flex items-center justify-center h-14 bg-green-600 w-14 rounded-full ">{item.name[0]} </h2>
+                                    }
+
                                     <div className="">
                                         <h1 className=" w-full flex  justify-center text-base font-bold ">{item.name}</h1>
-                                        <p className="text-sm text-secondary-text font-medium line-clamp-4 ">{item.date} ago</p>
+                                        <p className="text-sm text-secondary-text font-medium  ">{item.date} ago</p>
                                     </div>
                                     <Image src={google_icon} className='flex object-scale-down w-5.5 h-5.5' alt='google'/>
                                 </div>
                                 <StarRating rating={rating} handleRatingChange={handleRatingChange} />
                                 <div className="flex flex-col  gap-2">
-                                    <p className="text-sm font-medium line-clamp-4 ">{item.paragraph}</p>
-                                    <Link className='text-secondary-text hover:underline' href={"/"}>Read More</Link>
+                                    <p className={`text-sm font-medium  ${active && currentId == index ? "":"line-clamp-4"} `} >{item.paragraph}</p>
+                                    <div onClick={()=>{setCurrentId(index); setActive(!active) }} className='text-secondary-text hover:underline cursor-pointer ' >{active && currentId == index ? "Read Less":"Read More"} </div>
                                 </div>
                             </div>
                         </SwiperSlide>
