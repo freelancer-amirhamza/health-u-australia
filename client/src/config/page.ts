@@ -18,7 +18,17 @@ import {
     gardening_house_yard_img01,
     gardening_house_yard_img02,
     gardening_house_yard_img03,
-    gardening_house_yard_img04
+    gardening_house_yard_img04,
+    logo1,
+    icon1,
+    logo2,
+    icon2,
+    icon3,
+    icon4,
+    ndis1,
+    ndis2,
+    ndis3,
+    ndis4
 } from "assets"
 
 
@@ -193,6 +203,33 @@ export const about = [
             { keyword: "Diversity: ", text: "Our service participants come from various cultural, ethnic, social, and religious backgrounds, making it diverse in character." },
             { keyword: "Transparency:", text: "We are always upfront about how we work, the costs and the steps we take to maintain transparency." },
         ]
+    },
+]
+
+export const choose_items = [
+    {
+        logo:logo1,
+        icon:icon1,
+        title:"Trust and Reliability",
+        paragraph:"Our service quality makes us one of the most reliable NDIS providers around",
+    },
+    {
+        logo:logo2,
+        icon:icon2,
+        title:"Tailored Support",
+        paragraph:"We provide care according to participant’s requirements and enrich their lives",
+    },
+    {
+        logo:logo1,
+        icon:icon3,
+        title:"Experienced Team",
+        paragraph:"Our experienced team of support workers will help you reach your goals",
+    },
+    {
+        logo:logo2,
+        icon:icon4,
+        title:"Empowering Participants",
+        paragraph:"We empower participants to develop essential life skills and live an independent life",
     },
 ]
 
@@ -404,6 +441,56 @@ export const capacity_building = [
             "We offer personalised support for capacity building.",
             "We support your unique choices and decisions about our service.",
             "We empower your independence in a short period of time.",
+        ]
+    },
+]
+
+export const ndis_items = [
+    {
+        image: ndis1,
+        title1: "Health U Support Services-",
+        title2: " The NDIS Partner to Rely On",
+        paragraph1: "At Health U Support Services, we aim to empower individuals with specific needs by providing a wide range of support services through the National Disability Insurance Scheme (NDIS) optimised to their requirements. So, if you are a participant, with our assistance, you can experience the improvement of your quality of life. Our support staff will guide you in navigating NDIS and achieving independence.",
+        paragraph2: "We specialise in offering exceptional capacity-building support to you and assisting you in developing the skills that perfectly accompany you on your journey to achieving all your personal goals. From cooking and cleaning to finding a job, we will help you become skilled and confident in every way possible to enable you to seize the day on your own.",
+    },
+    {
+        image: ndis2,
+        title1: "What is NDIS, and",
+        title2: "Who is Eligible?",
+        paragraph1: "The National Disability Insurance Scheme (NDIS) is a government initiative that provides funding and support to Australians with permanent disabilities. The NDIS enables participants to access various services, such as community participation, transport support, and more, with the aim of equipping them with skills to enable them to achieve their goals and improve their well-being.",
+        paragraph2: "At Health U Support Services, we provide our support service to eligible individuals and their families while considering their needs.",
+        paragraph3: "The eligibility criteria for NDIS are:",
+        bullet_points: [
+            { keyword: "", text: "You have to be within 9 to 65 years of age" },
+            { keyword: "", text: "You have a significant disability that affects your daily life and activities" },
+            { keyword: "", text: "You need to be a permanent Australian citizen" },
+        ]
+    },
+    {
+        image: ndis3,
+        title1: "Application Support –",
+        title2: "At No Cost to You",
+        paragraph1: "Navigating the NDIS application process can be overwhelming, but we are here to simplify it. We will assist you with the process to ensure that you are able to secure your funding. Our experienced team will guide you every step of the way and even handle the paperwork for the application procedure.",
+        paragraph2: "We are committed to helping you get started with your NDIS journey that is",
+        paragraph3: "Our no-cost application support includes:",
+        bullet_points: [
+            { keyword: "", text: "Initial consultation, where we will assess your eligibility" },
+            { keyword: "", text: "We will assist you with filling out and submitting the NDIS application" },
+            { keyword: "", text: " Preparing supporting documents and reports" },
+            { keyword: "", text: "Communicating with the NDIS representatives on your behalf" },
+        ]
+    },
+    {
+        image: ndis4,
+        title1: "Funded Supports",
+        title2: " for You",
+        paragraph1: "After your NDIS funding is approved, at Health U Support Services, we will offer the support that you need to achieve your goals.",
+        paragraph2: "",
+        paragraph3: "Some of the funded services we offer include:",
+        bullet_points: [
+            { keyword: "Community Participation:", text: "Our staff will help you engage with your community, develop social connections, and build new skills." },
+            { keyword: "Capacity Building:", text: "We will assist you in developing skills with which you can achieve independence and live your life with your head held high." },
+            { keyword: "Domestic Assistance / Cleaning ", text: " We assist participants with various household tasks and keeping their homes clean so that they can live a convenient and peaceful life." },
         ]
     },
 ]

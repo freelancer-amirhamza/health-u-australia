@@ -1,4 +1,4 @@
-import { sil_house } from './../config/page';
+
 import service1 from "assets/images/services/services-img01.jpg"
 import service2 from "assets/images/services/services-img02.jpg"
 import service3 from "assets/images/services/services-img03.jpg"
@@ -79,6 +79,16 @@ import gardening_house_yard_img01 from "assets/images/2026/09/home-repair-yard-m
 import gardening_house_yard_img02 from "assets/images/2026/10/gardening-house-and-yard-maintenance-img.jpg"
 import gardening_house_yard_img03 from "assets/images/2026/09/home-repair-yard-maintenance-img03.jpg"
 import gardening_house_yard_img04 from "assets/images/2026/09/home-repair-yard-maintenance-img04.jpg"
+import icon1 from "assets/images/choose-icon-img01.png"
+import icon2 from "assets/images/choose-icon-img02.png"
+import icon3 from "assets/images/choose-icon-img03.png"
+import icon4 from "assets/images/choose-icon-img04.png"
+import logo1 from "assets/images/choose-logo-img.png"
+import logo2 from "assets/images/choose-logo-img02.png"
+import ndis1 from "assets/images/about/ndis-img01.jpg"
+import ndis2 from "assets/images/about/ndis-img02.jpg"
+import ndis3 from "assets/images/about/ndis-img03.jpg"
+import ndis4 from "assets/images/about/ndis-img04.jpg"
 export {
     service1, service2, service3, service4,service5,service6,service7,service8,aryan, brain, evelyn,jose,
     email_icon,clack_icon,call_icon,sil_image1,sil_image2,sil_image3,sil_image4,community_participation1,
@@ -91,5 +101,5 @@ export {
     property_img15,property_img16,property_img17,property_img18,property_img19,property_img20,property_img21,
     property_img22,gallery_img01,gallery_img02,gallery_img03,gallery_img04,gallery_img05,gallery_img06,
     home_modification_img01,gardening_house_yard_img01,gardening_house_yard_img02,gardening_house_yard_img03,
-    gardening_house_yard_img04,
+    gardening_house_yard_img04,icon1,icon2,icon3,logo1,icon4,logo2,ndis1,ndis2,ndis3,ndis4,
 }

@@ -13,7 +13,7 @@ const About = () => {
                     x:-80,
                     y:0,
                 }}
-                 whileInView={{
+                whileInView={{
                     opacity:1,
                     x:0,
                     y:0,

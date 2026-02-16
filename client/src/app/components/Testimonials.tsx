@@ -13,6 +13,8 @@ import StarRating from 'app/common/start-rating';
 import google_icon from "assets/Google icon.png"
 import google_map from "assets/images/staticmap.png"
 import { MdArrowBackIosNew, MdArrowForwardIos } from 'react-icons/md';
+import { motion } from 'framer-motion';
+import { fadeIn } from 'app/variants';
 const Testimonials = () => {
 
     const prevRef = useRef<any>(null);
@@ -33,8 +35,14 @@ const Testimonials = () => {
     return (
         <section className='w-full h-full     flex  '>
             <div className="container mx-auto w-full h-full sm-max:px-5  items-center justify-center py-12 flex flex-col  ">
-                <h1 className=" text-3xl w-full text-center p-5 text-primary font-bold ">Health U Australia</h1>
-                <h1 className="text-4xl w-full p-5 text-center text-black font-bold uppercase ">Our Testimonial</h1>
+                <motion.h1 className=" text-3xl w-full text-center p-5 text-primary font-bold "
+                variants={fadeIn("left",0.5)}
+                            initial="hidden"
+                            whileInView={"show"} >Health U Australia</motion.h1>
+                <motion.h1 className="text-4xl w-full p-5 text-center text-black font-bold uppercase "
+                variants={fadeIn("right",0.5)}
+                            initial="hidden"
+                            whileInView={"show"}>Our Testimonial</motion.h1>
                 <div className="flex flex-col md:flex-row w-full h-full">
                     <div className="flex  items-start justify-start w-full h-full max-w-2/12 gap-2 my-6 ">
                         <Image src={google_map} alt='Health U Australia' className='object-cover h-full w-full max-h-16 max-w-16'/>

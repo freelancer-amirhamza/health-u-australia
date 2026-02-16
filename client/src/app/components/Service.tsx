@@ -30,7 +30,7 @@ const Service = () => {
         initial={{
           opacity:0,
           x:0,
-          y:-80,
+          y:-60,
         }}
         whileInView={{
           opacity:1,
@@ -47,11 +47,11 @@ const Service = () => {
         <h1 className=" text-4xl w-full text-center  text-primary font-bold ">Our Services</h1>
         <h1 className="text-4xl w-full  text-center text-black font-bold uppercase ">Comprehensive Disability Care Services</h1>
         </motion.div>
-        <motion.div className=""
+        <motion.div className="flex w-full h-full min-h-110 relative justify-center mx-auto  items-center"
         initial={{
           opacity:0,
-          x:-80,
-          y:0,
+          x:0,
+          y:60,
         }}
         whileInView={{
           opacity:1,
@@ -64,6 +64,7 @@ const Service = () => {
             ease:[0.25,0.25,0.25,0.75]
           }
         }}
+
         >
            <Swiper
           loop={true}
