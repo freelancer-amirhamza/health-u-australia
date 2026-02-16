@@ -2,16 +2,50 @@ import React from 'react'
 import about_img from "assets/images/about-img.jpg"
 import Image from 'next/image'
 import Link from 'next/link'
-
+import {motion} from "framer-motion"
 const About = () => {
     return (
         <section className='flex w-full  h-full ' >
             <div className="container mx-auto flex flex-col py-20 px-10 sm:flex-row gap-20">
-                <div className="flex flex-1 w-full h-full ">
+                <motion.div
+                initial={{
+                    opacity:0,
+                    x:-80,
+                    y:0,
+                }}
+                 whileInView={{
+                    opacity:1,
+                    x:0,
+                    y:0,
+                    transition:{
+                        type:"tween",
+                        duration:1,
+                        delay:0.5,
+                        ease:[0.25,0.25,0.25,0.25]
+                    }
+                 }}
+                className="flex flex-1 w-full h-full ">
                     <Image src={about_img} alt='about health u australia '
                         className=' inset-0 w-auto  h-full object-cover rounded-tr-[150px] rounded-2xl  ' />
-                </div>
-                <div className="flex-1 flex flex-col gap-8">
+                </motion.div>
+                <motion.div
+                initial={{
+                    opacity:0,
+                    x:80,
+                    y:0,
+                }}
+                 whileInView={{
+                    opacity:1,
+                    x:0,
+                    y:0,
+                    transition:{
+                        type:"tween",
+                        duration:1,
+                        delay:0.5,
+                        ease:[0.25,0.25,0.25,0.25]
+                    }
+                 }}
+                className="flex-1 flex flex-col gap-8">
                     <h2 className="text-primary font-bold text-3xl">About Us</h2>
                     <h1 className="text-black font-extrabold text-[2.3rem] uppercase">We Offer Care <span className='text-secondary'>that Matters</span> </h1>
                     <p className="text-secondary-text text-lg font-medium ">
@@ -25,7 +59,7 @@ const About = () => {
                     <Link href={"/"} className='text-white bg-primary text-xl uppercase font-semibold rounded-full py-5 px-8
                         hover:bg-secondary transition-colors duration-300 items-start w-max '
                     >Learn more </Link>
-                </div>
+                </motion.div>
             </div>
         </section>
     )

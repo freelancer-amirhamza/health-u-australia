@@ -9,7 +9,7 @@ import { Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
-import Link from 'next/link';
+import {motion} from "framer-motion";
 import service_bg from "assets/images/services-pattan-img01.png"
 
 const Service = () => {
@@ -26,9 +26,46 @@ const Service = () => {
     <section className='w-full h-full relative' style={{ backgroundImage: `url(${service_bg.src})`, backgroundSize: 'cover', backgroundPosition: 'center',  }}>
       <div className="absolute inset-0 bg-yellow-500/30"></div>
       <div className="container mx-auto w-full h-full items-center justify-center py-12 flex flex-col relative z-10">
-        <h1 className=" text-3xl w-full text-center p-5 text-primary font-bold ">Our Services</h1>
-        <h1 className="text-4xl w-full p-5 text-center text-black font-bold uppercase ">Comprehensive Disability Care Services</h1>
-        <Swiper
+        <motion.div className="grid gap-8 py-7"
+        initial={{
+          opacity:0,
+          x:0,
+          y:-80,
+        }}
+        whileInView={{
+          opacity:1,
+          x:0,
+          y:0,
+          transition:{
+            delay:0.5,
+            duration:1,
+            type:"tween",
+            ease:[0.25,0.25,0.25,0.75]
+          }
+        }}
+        >
+        <h1 className=" text-4xl w-full text-center  text-primary font-bold ">Our Services</h1>
+        <h1 className="text-4xl w-full  text-center text-black font-bold uppercase ">Comprehensive Disability Care Services</h1>
+        </motion.div>
+        <motion.div className=""
+        initial={{
+          opacity:0,
+          x:-80,
+          y:0,
+        }}
+        whileInView={{
+          opacity:1,
+          x:0,
+          y:0,
+          transition:{
+            delay:0.5,
+            duration:1,
+            type:"tween",
+            ease:[0.25,0.25,0.25,0.75]
+          }
+        }}
+        >
+           <Swiper
           loop={true}
           autoplay={{
             delay: 2000,
@@ -78,6 +115,8 @@ const Service = () => {
             <button ref={nextRef} className=" text-amber-500 text-4xl px-1.5 py-1 rounded cursor-pointer hover:bg-amber-200 bg-amber-100 "><FaAngleRight /> </button>
           </div>
         </Swiper>
+        </motion.div>
+
 
       </div>
     </section>
