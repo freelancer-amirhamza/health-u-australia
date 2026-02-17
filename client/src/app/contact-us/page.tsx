@@ -1,14 +1,20 @@
+"use client"
+
+import { useForm } from '@formspree/react'
 import Button from 'app/UI/Button'
 import PageBanner from 'app/UI/PageBanner'
 import Title from 'app/UI/Title'
-import { contact_details } from 'config/page'
-import React from 'react'
+import { contact_details } from 'config/page';
 import { LuPhoneCall } from 'react-icons/lu'
 import { MdOutlineMail } from 'react-icons/md'
 import { PiMapPinAreaBold } from 'react-icons/pi'
 import { TbClockHour3 } from 'react-icons/tb'
 
 const Contact = () => {
+    const [state, handleSubmit] = useForm("xnjbvngz");
+    if(state.succeeded){
+        return <p>Thanks for joining!</p>
+    }
   return (
     <div className="grid w-full h-full">
         <PageBanner title='Contact Us' path='/contact-us'/>
@@ -61,26 +67,30 @@ const Contact = () => {
             <div className="flex container mx-auto px-0 flex-col md:flex-row items-center justify-center w-full shadow py-12 gap-10 ">
                 <div className="grid gap-5 w-full rounded border shadow border-neutral-400 p-5">
                     <Title title1='Get In Touch' title2='With Us'/>
-                    <form className="grid gap-5 ">
+                    <form onSubmit={handleSubmit} className="grid gap-5 ">
                         <input
                         type="text"
                         name='name'
+                        id='name'
                         placeholder='Enter Your Name'
                         className="text-neutral-500 border py-3 px-5 text-lg rounded  outline-none focus-within:border-secondary  " />
                         <input
                         type="text"
                         name='phone'
+                        id='phone'
                         placeholder='Enter Your Phone'
                         className="text-neutral-500 border py-3 px-5 text-lg rounded  outline-none focus-within:border-secondary  " />
                         <input
                         type="email"
                         name='email'
+                        id='email'
                         placeholder='Enter Your Email'
                         className="text-neutral-500 border py-3 px-5 text-lg rounded  outline-none focus-within:border-secondary  " />
                         <textarea name="message" id="message" placeholder='Write the message here! ' rows={5}
                         className="text-neutral-500 border py-3 px-5 text-lg rounded  outline-none focus-within:border-secondary  "
                         />
                         <Button path='' label='Submit Now'  />
+                        <button type="submit">Submit</button>
                     </form>
                 </div>
                 <div className="grid gap-5 w-full rounded border border-neutral-400 shadow p-5">
@@ -113,7 +123,8 @@ const Contact = () => {
                             </div>
 
                         </div>
-                        <Button path='' label='Apply Now'  />
+                        <button type="submit">Submit</button>
+                        {/* <Button path='' label='Apply Now'  /> */}
                     </form>
                 </div>
             </div>
