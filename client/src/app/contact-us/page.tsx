@@ -10,8 +10,7 @@ import { LuPhoneCall } from 'react-icons/lu'
 import { MdOutlineMail } from 'react-icons/md'
 import { PiMapPinAreaBold } from 'react-icons/pi'
 import { TbClockHour3 } from 'react-icons/tb';
-import Swal from 'sweetalert2'
-import { useEffect, useRef, useState } from 'react'
+import { useRef } from 'react'
 
 
 
