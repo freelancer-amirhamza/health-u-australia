@@ -1,9 +1,9 @@
 import React from 'react'
-import PageBanner from 'app/UI/PageBanner'
+import PageBanner from 'app/utils/PageBanner'
 import Image from 'next/image'
 import { TiTick } from 'react-icons/ti';
 import Link from 'next/link';
-import {  support_coordination,  } from 'config/page'
+import { support_coordination, } from 'config/page'
 
 const SupportCoordination = () => {
     return (
@@ -25,7 +25,7 @@ const SupportCoordination = () => {
                                         <p className="text-lg font-medium text-secondary-text "><strong>{itm?.keyword} </strong>{itm?.text}</p>
                                     </li>
                                 ))}
-                                                            <h1 className="text-[27px] font-bold  ">{item?.title3} <span className="text-secondary">{item?.title4}</span></h1>
+                                <h1 className="text-[27px] font-bold  ">{item?.title3} <span className="text-secondary">{item?.title4}</span></h1>
                                 <p className="text-lg text-secondary-text font-medium my-2">{item?.paragraph2} </p>
                                 {/* {item?.paragraph3 && <p className="text-lg text-secondary-text font-medium my-2">{item.paragraph3}</p>} */}
                             </ul>

@@ -1,10 +1,10 @@
 import React from 'react'
-import PageBanner from 'app/UI/PageBanner'
+import PageBanner from 'app/utils/PageBanner'
 import Image from 'next/image'
 import { TiTick } from 'react-icons/ti';
 import Link from 'next/link';
-import { capacity_building, community_participation,  } from 'config/page'
-import Title from 'app/UI/Title';
+import { capacity_building, community_participation, } from 'config/page'
+import Title from 'app/utils/Title';
 
 const Capacity = () => {
     return (
@@ -18,7 +18,7 @@ const Capacity = () => {
                             <Title title1={item.title1} title2={item.title2} />
                             <p className=" flex w-full text-lg text-secondary-text font-medium  ">{item.paragraph1}</p>
                             <ul className="grid gap-2">
-                               {item?.bullet_points && item?.bullet_points.map((itm, idx) => (
+                                {item?.bullet_points && item?.bullet_points.map((itm, idx) => (
                                     <li key={idx} className=" flex items-start w-full gap-2 ">
                                         <TiTick className='bg-secondary rounded-full text-4xl  h-full w-full max-h-5 max-w-5 mt-0.5 text-white ' />
                                         <p className="text-lg font-medium text-secondary-text ">{itm}</p>

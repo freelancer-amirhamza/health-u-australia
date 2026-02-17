@@ -1,12 +1,12 @@
 "use client";
 
 import React from 'react'
-import PageBanner from 'app/UI/PageBanner'
+import PageBanner from 'app/utils/PageBanner'
 import Image from 'next/image'
 import { TiTick } from 'react-icons/ti';
 import Link from 'next/link';
 import { gardening_house_yard } from 'config/page'
-import Title from 'app/UI/Title';
+import Title from 'app/utils/Title';
 import { motion } from "framer-motion";
 const GardeningHouse = () => {
     return (

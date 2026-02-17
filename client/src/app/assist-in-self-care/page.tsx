@@ -1,10 +1,10 @@
 import React from 'react'
-import PageBanner from 'app/UI/PageBanner'
+import PageBanner from 'app/utils/PageBanner'
 import Image from 'next/image'
 import { TiTick } from 'react-icons/ti';
 import Link from 'next/link';
-import {  assist_in_self_care, support_coordination,  } from 'config/page'
-import Title from 'app/UI/Title';
+import { assist_in_self_care, support_coordination, } from 'config/page'
+import Title from 'app/utils/Title';
 
 const AssistInSelf = () => {
     return (

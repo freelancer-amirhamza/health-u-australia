@@ -1,5 +1,5 @@
 import React from 'react'
-import PageBanner from 'app/UI/PageBanner'
+import PageBanner from 'app/utils/PageBanner'
 import Image from 'next/image'
 import ndis1 from "assets/images/about/ndis-img01.jpg"
 import ndis2 from "assets/images/about/ndis-img02.jpg"

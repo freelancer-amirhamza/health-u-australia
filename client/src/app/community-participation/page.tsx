@@ -1,10 +1,10 @@
 import React from 'react'
-import PageBanner from 'app/UI/PageBanner'
+import PageBanner from 'app/utils/PageBanner'
 import Image from 'next/image'
 import { TiTick } from 'react-icons/ti';
 import Link from 'next/link';
-import { community_participation,  } from 'config/page'
-import Title from 'app/UI/Title';
+import { community_participation, } from 'config/page'
+import Title from 'app/utils/Title';
 
 const Community = () => {
     return (

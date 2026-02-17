@@ -1,14 +1,14 @@
 "use client"
 import React, { useState } from 'react'
-import PageBanner from 'app/UI/PageBanner'
+import PageBanner from 'app/utils/PageBanner'
 import Image from 'next/image'
 import icon1 from "assets/images/2026/10/icon.png"
 import icon2 from "assets/images/2026/10/icon2.png"
 import icon3 from "assets/images/2026/10/icon4.png"
 import { TiTick } from 'react-icons/ti';
 import { sil_house, sil_house_details, sil_house_gallery } from 'config/page'
-import Button from 'app/UI/Button'
-import Title from 'app/UI/Title'
+import Button from 'app/utils/Button'
+import Title from 'app/utils/Title'
 import { FaPlus } from 'react-icons/fa'
 import SlideModal from 'app/components/SlideModal'
 

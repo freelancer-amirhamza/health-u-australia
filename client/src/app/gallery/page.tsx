@@ -1,11 +1,11 @@
 "use client"
 import React, { useState } from 'react'
-import PageBanner from 'app/UI/PageBanner'
+import PageBanner from 'app/utils/PageBanner'
 import { sil_property } from 'config/page'
 import Image from 'next/image'
 import { FaPlus } from 'react-icons/fa'
 import SlideModal from 'app/components/SlideModal'
-import Title from 'app/UI/Title'
+import Title from 'app/utils/Title'
 const Gallery = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [currentId, setCurrentId] = useState(0)
