@@ -1,37 +1,79 @@
 "use client"
 
 import { useForm, ValidationError } from '@formspree/react'
-import { successAlert } from 'app/utils/alart'
+import { errorAlert, successAlert } from 'app/utils/alart'
 import PageBanner from 'app/utils/PageBanner'
 import Title from 'app/utils/Title'
 import { nav_items } from 'config/page'
-import React, { useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { FaCheck } from 'react-icons/fa'
 
 const Referral = () => {
-    const [state,handleSubmit] = useForm("xnjbvngz");
+    const [state, handleSubmit] = useForm("xnjbvngz");
     const formRef = useRef<HTMLFormElement>(null);
-    const handleFormSubmit = (e:any)=>{
+    const handleFormSubmit = (e: any) => {
         e.preventDefault()
         try {
             const form = e.currentTarget as HTMLFormElement;
-        const name = (form.querySelector('input[name="first_name"')as HTMLFormElement)?.value || "";
-        const subjectInput = form.querySelector('input[name="_subject"]') as HTMLFormElement || null;
-        if (subjectInput) subjectInput.value = `New Referral Application from ${name} `;
-                    if (state.succeeded) {
-                        successAlert("Thank you for submission!")
-                        formRef.current?.reset();
-                    }
+            const name = (form.querySelector('input[name="first_name"') as HTMLFormElement)?.value || "";
+            const subjectInput = form.querySelector('input[name="_subject"]') as HTMLFormElement || null;
+            if (subjectInput) subjectInput.value = `New Referral Application from ${name} `;
+            if (state.succeeded) {
+                successAlert("Thank you for submission!")
+                formRef.current?.reset();
+            }
         } catch (error) {
         }
         return handleSubmit(e)
     }
 
+    useEffect(() => {
+        if (state.succeeded) {
+            successAlert("Thank you for submission!");
+            formRef.current?.reset();
+        }
+        if (state.errors) {
+            // Use an error alert, not successAlert
+            successAlert("Something went wrong. Please check the console.");
+            console.error(state.errors);
+        }
+    }, [state.succeeded, state.errors]);
+
+
+
+
+
+
+
+
+
+
+    const [result, setResult] = useState("");
+
+    const onSubmit = async (event: any) => {
+        event.preventDefault();
+        const formData = new FormData(event.target);
+        formData.append("access_key", "f5dadc88-7b88-43d2-b9ea-c58114b7d603");
+
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        });
+
+        const data = await response.json();
+        setResult(data.success ? "Success!" : "Error");
+        if (data.success) {
+            // Use an error alert, not successAlert
+            successAlert(result);
+            console.error(data.error);
+        }
+    };
+
     return (
         <div className="flex flex-col items-center justify-between w-full">
             <PageBanner title='Referral' path='referral' />
             <div className="container mx-auto flex flex-col my-10 items-center justify-center w-full">
-                <form ref={formRef} onSubmit={handleFormSubmit}  >
+                <form ref={formRef} onSubmit={onSubmit} encType="multipart/form-data"  >
                     <div className="grid  border border-neutral-300 px-10 py-5 rounded-md place-content-start my-10 w-full max-w-3xl">
                         <Title title1='Ready To' title2='Get Started?' />
                         <div className="grid gap-4 text-xl text-secondary-text">
@@ -51,7 +93,7 @@ const Referral = () => {
                                 <label className="font-medium">First Name:</label>
                                 <input type="text" name="participant_first_name" id="participant_first_name" required
                                     className=' px-4 py-3 border-neutral-400 focus-within:outline-secondary border rounded  min-w-full ' />
-                                    <ValidationError prefix="Participant first name" field="participant_first_name" errors={state.errors} />
+                                <ValidationError prefix="Participant first name" field="participant_first_name" errors={state.errors} />
                             </div>
                             <div className="grid gap-2 text-xl text-secondary-text w-full  ">
                                 <label className="font-medium">Last Name:</label>
@@ -269,7 +311,6 @@ const Referral = () => {
                     </div>
                     {/* participant details */}
                     <button disabled={state.submitting} className='text-white cursor-pointer text-xl max-w-fit uppercase font-semibold px-9 py-3.5 rounded-full bg-primary hover:bg-secondary transition-colors duration-300' type="submit">Apply Now</button>
-
                 </form>
             </div>
         </div>
