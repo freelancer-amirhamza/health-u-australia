@@ -1,16 +1,21 @@
+"use client"
+
 import PageBanner from 'app/utils/PageBanner'
 import Image from 'next/image'
 import React from 'react'
 import { PiMapPinAreaFill } from 'react-icons/pi';
 import event_image from "assets/images/2026/09/event-img01.jpg";
 import { TiTick } from 'react-icons/ti';
+import { motion } from 'framer-motion';
+import { fadeIn } from 'app/variants';
 
 const PastEvents = () => {
     return (
         <div className="grid w-full h-full gap-10 ">
             <PageBanner title='Current Events' path='/current-events' />
             <div className="container mx-auto items-start w-full justify-center my-10 rounded border-neutral-300  gap-12 border text-secondary-text p-10 flex flex-col md:flex-row ">
-                <div className="flex flex-col items-start text-lg w-full ">
+                <motion.div  className="flex flex-col items-start text-lg w-full "
+                initial="hidden" whileInView={"show"} variants={fadeIn('left',0.3)} viewport={{once:false,amount:0.2}}>
                     <div className="grid gap-3 py-5">
                         <h1 className="text-2xl font-semibold ">One-off :</h1>
                         <p className=" text-secondary-text font-semibold  ">27th September (Friday) 1pm – 3:30pm: 2-Hour Decluttering Workshop</p>
@@ -54,10 +59,10 @@ const PastEvents = () => {
                         </p>
                     </div>
 
-                </div>
-                <div className="flex w-full  ">
+                </motion.div>
+                <motion.div className="flex w-full  " initial="hidden" whileInView={"show"} variants={fadeIn('right',0.3)} viewport={{once:false,amount:0.2}}>
                     <Image src={event_image} alt='event' />
-                </div>
+                </motion.div>
             </div>
         </div>
     )
