@@ -40,7 +40,8 @@ const About = () => {
                   }
                 }}
               >
-                <Image src={item.image} alt='about heath u australia' className='hover:scale-102 ease-in-out transition-all duration-500  w-full h-full object-center inset-0 items-start justify-start p-0 m-0 ' />
+                <Image src={item.image} alt='about heath u australia'
+                className='hover:scale-102 ease-in-out transition-all duration-500 rounded-md w-full h-full object-center inset-0 items-start justify-start p-0 m-0 ' />
               </motion.div>
               <motion.div className="flex flex-col w-full justify-center gap-2    "
                 initial={{

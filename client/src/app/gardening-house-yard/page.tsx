@@ -8,6 +8,7 @@ import Link from 'next/link';
 import { gardening_house_yard } from 'config/page'
 import Title from 'app/utils/Title';
 import { motion } from "framer-motion";
+import { fadeIn } from 'app/variants';
 const GardeningHouse = () => {
     return (
         <div className="flex flex-col justify-center items-center w-full h-full ">
@@ -33,7 +34,7 @@ const GardeningHouse = () => {
                             }}
                             viewport={{ once: false, amount: 0.5 }}
                             className="items-start justify-start p-0 m-0 flex w-full h-full">
-                            <Image src={item.image} alt='about heath u australia' className='hover:scale-102 ease-in-out transition-all duration-500  w-full h-full md:object-cover inset-0  ' />
+                            <Image src={item.image} alt='about heath u australia' className='hover:scale-102 ease-in-out transition-all duration-500  w-full h-full md:object-center rounded-md  inset-0  ' />
                         </motion.div>
                         <motion.div className="flex flex-col w-full justify-center gap-2   "
                             initial={{
@@ -70,7 +71,8 @@ const GardeningHouse = () => {
                     </div>
                 ))}
 
-                <div className="flex flex-col w-full justify-center gap-4 h-full items-center bg-gray-100 p-10    ">
+                <motion.div variants={fadeIn("down",0.2)} initial="hidden" whileInView={"show"}
+                className="flex flex-col w-full justify-center gap-4 h-full items-center bg-gray-100 p-10    ">
                     <h1 className="text-3xl font-bold  ">Make an Appointment with Us</h1>
                     <div className='w-14 h-0.75 bg-primary items-center  ' />
                     <p className=" flex  text-lg text-secondary-text font-medium text-center ">
@@ -80,7 +82,7 @@ const GardeningHouse = () => {
                         <Link href={"/contact-us"} className='text-white text-lg font-semibold px-9 py-3.5 rounded-full bg-primary hover:bg-secondary transition-colors duration-300 ' >Enquire Now</Link>
                         <Link href={"/referral"} className='text-white text-lg font-semibold px-9 py-3.5 rounded-full bg-primary hover:bg-secondary transition-colors duration-300 ' >Referral</Link>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </div>
     )
