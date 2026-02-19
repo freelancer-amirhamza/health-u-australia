@@ -6,7 +6,8 @@ import Link from 'next/link';
 import { sil_house } from 'config/page'
 import compassion_in_action1 from "assets/images/compassion/compassion-in-action-img01.jpg"
 import compassion_in_action2 from "assets/images/compassion/compassion-in-action-img02.jpg"
-
+import { motion } from 'framer-motion';
+import { fadeIn } from 'app/variants';
 const page = () => {
     return (
         <div className="flex flex-col justify-center items-center w-full h-full ">
@@ -14,10 +15,14 @@ const page = () => {
             <div className="container max-md:px-5 flex flex-col items-center mx-auto justify-center w-full h-full ">
                 <div className="flex flex-col md:flex-row-reverse my-12 gap-x-10 w-full">
                     <div className="flex flex-col w-full h-full md:max-w-lg overflow-hidden items-center justify-center gap-12">
-                        <Image src={compassion_in_action1} alt='compassion in action'
+                        <motion.div initial="hidden" whileInView={"show"} variants={fadeIn("up", 0.5)} viewport={{once:false,amount:0.3}} className="flex w-full h-full">
+                            <Image src={compassion_in_action1} alt='compassion in action'
                             className='object-cover w-full h-full inset-0 hover:scale-103  duration-500 transition-all ease-in-out rounded-md' />
-                        <Image src={compassion_in_action2} alt='compassion in action 1'
-                            className='object-cover w-full h-full inset-0 hover:scale-103 duration-500 transition-all ease-in-out rounded-md' />
+                        </motion.div>
+                        <motion.div initial="hidden" whileInView={"show"} variants={fadeIn("up", 0.5)} viewport={{once:false,amount:0.3}} className="flex w-full h-full">
+                            <Image src={compassion_in_action2} alt='compassion in action'
+                            className='object-cover w-full h-full inset-0 hover:scale-103  duration-500 transition-all ease-in-out rounded-md' />
+                        </motion.div>
                     </div>
                     {/* images section end */}
                     <div className="flex flex-col w-full justify-center gap-10     ">
