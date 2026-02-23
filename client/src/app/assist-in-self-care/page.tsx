@@ -8,7 +8,14 @@ import Link from 'next/link';
 import { assist_in_self_care } from 'config/page'
 import Title from 'app/utils/Title';
 import { fadeIn } from 'app/variants'
+import { Metadata } from 'next'
 
+
+
+export const metadata : Metadata = {
+    title:"Professional Assist in Self Care Support | Health U Australia",
+    description:"We provide comprehensive assist in self care services to promote independence and well-being. Contact us now. Call 0481707758 or 0431377132.",
+};
 const AssistInSelf = () => {
     return (
         <div className="flex flex-col justify-center items-center w-full h-full ">

@@ -8,7 +8,12 @@ import { assist_in_transport, } from 'config/page'
 import Title from 'app/utils/Title';
 import { motion } from 'framer-motion';
 import { fadeIn } from 'app/variants';
+import { Metadata } from 'next';
 
+export const metadata: Metadata = {
+    title:"NDIS Travel & Transport Assistance in Sydney- Health U Australia",
+    description:"Explore NDIS Transport Assistance to enhance your independence and well-being with reliable and accessible transport services.",
+};
 const AssistInTransport = () => {
     return (
         <div className="flex flex-col justify-center items-center w-full h-full ">

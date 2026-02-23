@@ -9,6 +9,12 @@ import { gardening_house_yard } from 'config/page'
 import Title from 'app/utils/Title';
 import { motion } from "framer-motion";
 import { fadeIn } from 'app/variants';
+import { Metadata } from 'next';
+
+export const metadata : Metadata = {
+    title:"NDIS Gardening & Home Maintenance Services | Health U Support",
+    description:"Health U Support offers NDIS gardening, yard, and home maintenance to keep homes safe, clean, and accessible. Tailored care.",
+}
 const GardeningHouse = () => {
     return (
         <div className="flex flex-col justify-center items-center w-full h-full ">

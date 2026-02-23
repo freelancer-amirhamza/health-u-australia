@@ -8,6 +8,13 @@ import { capacity_building } from 'config/page'
 import Title from 'app/utils/Title';
 import { motion } from 'framer-motion';
 import { fadeIn } from 'app/variants';
+import { Metadata } from 'next';
+
+
+export const metadata : Metadata = {
+    title:"Capacity Building NDIS Services | NDIS Capacity Building Support",
+    description:"Maximize your potential with NDIS capacity building support. Discover tailored NDIS capacity building services to help you reach goals. Build skills and boost independence.",
+}
 const Capacity = () => {
     return (
         <div className="flex flex-col justify-center items-center w-full h-full ">

@@ -8,6 +8,13 @@ import SlideModal from 'app/components/SlideModal'
 import Title from 'app/utils/Title';
 import { motion } from 'framer-motion'
 import { fadeIn } from 'app/variants'
+import { Metadata } from 'next'
+
+
+export const metadata : Metadata = {
+    title:"Gallery of Wellness Inspiration – Health U Australia",
+    description:"Explore our gallery filled with inspiring visuals of health programs and vibrant wellness experiences.",
+}
 const Gallery = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [currentId, setCurrentId] = useState(0)

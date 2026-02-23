@@ -8,8 +8,13 @@ import Link from 'next/link';
 import { home_modification, sil_house } from 'config/page'
 import Title from 'app/utils/Title'
 import { fadeIn } from 'app/variants'
+import { Metadata } from 'next'
 
 
+export const metadata : Metadata = {
+    title:"NDIS Home Modifications & Accessibility Solutions in Sydney",
+    description:"Enhance your home with NDIS home modifications and accessibility features. Professional services for improved independence and mobility.",
+};
 const HomeModification = () => {
     return (
         <div className="flex flex-col justify-center items-center w-full h-full ">

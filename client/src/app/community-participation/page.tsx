@@ -8,7 +8,13 @@ import { community_participation, } from 'config/page'
 import Title from 'app/utils/Title';
 import { motion } from 'framer-motion';
 import { fadeIn } from 'app/variants';
+import { Metadata } from 'next';
 
+
+export const metadata : Metadata = {
+    title:"NDIS Community Participation for Everyone",
+    description:"Find NDIS community participation options and social programs for NDIS participants. Unlock the benefits of NDIS social participation programs to build stronger connections.",
+}
 const Community = () => {
     return (
         <div className="flex flex-col justify-center items-center w-full h-full ">

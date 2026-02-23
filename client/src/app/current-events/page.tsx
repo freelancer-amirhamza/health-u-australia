@@ -7,7 +7,13 @@ import { PiMapPinAreaFill } from 'react-icons/pi';
 import event_image from "assets/images/2026/09/event-img02.jpg";
 import { motion } from 'framer-motion';
 import { fadeIn } from 'app/variants';
+import { Metadata } from 'next';
 
+
+export const metadata: Metadata = {
+    title:"Stay Updated with Current Events | Health U Australia",
+    description:"Discover the latest health events, wellness workshops, and news updates. Join Health U Australia to better health."
+};
 const CurrentEvents = () => {
     return (
         <div className="grid w-full h-full gap-12  ">

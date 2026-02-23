@@ -12,7 +12,13 @@ import Title from 'app/utils/Title'
 import { FaPlus } from 'react-icons/fa'
 import SlideModal from 'app/components/SlideModal'
 import { motion } from 'framer-motion'
-import { fadeIn } from 'app/variants'
+import { fadeIn } from 'app/variants';
+import { Metadata } from 'next'
+
+export const metadata : Metadata = {
+    title:"SIL House - Health U Australia Supported Independent Living (SIL) NSW",
+    description:"Boost independence with Health U’s person-centered SIL program, offering 24/7 support and shared living in Ryde. Check eligibility and tour accessible residences.",
+}
 
 const SilHouse = () => {
     const [isOpen, setIsOpen] = useState(false);
