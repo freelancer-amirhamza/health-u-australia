@@ -1,9 +1,14 @@
-"use client"
-import Home from "./pages/home/page"
+import { Metadata } from "next"
+import Home from "./pages/page"
+
+export const metadata: Metadata = {
+  title: "Health U Australia - Best NDIS Service & Support Provider in Ryde",
+  description: " Find the best NDIS provider to meet your needs and support your journey to independent living and personal growth.",
+}
 
 export default function Page() {
   return <main className="h-full flex w-full">
-  <Home/>
+    <Home />
   </main>
 }
 

@@ -1,11 +1,5 @@
+"use client"
 import Image from 'next/image'
-import React from 'react'
-import icon1 from "assets/images/choose-icon-img01.png"
-import icon2 from "assets/images/choose-icon-img02.png"
-import icon3 from "assets/images/choose-icon-img03.png"
-import icon4 from "assets/images/choose-icon-img04.png"
-import logo1 from "assets/images/choose-logo-img.png"
-import logo2 from "assets/images/choose-logo-img02.png"
 import bg_pattern from "assets/images/choose-pattan-img.png"
 import { motion } from 'framer-motion'
 import { choose_items } from 'config/page'

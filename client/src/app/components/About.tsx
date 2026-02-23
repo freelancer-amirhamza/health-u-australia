@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import about_img from "assets/images/about-img.jpg"
 import Image from 'next/image'
